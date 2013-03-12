@@ -4,4 +4,4 @@
 
 Źródło: [MapReduceFoundation: Typing of MapReduce](http://www.infosun.fim.uni-passau.de/cl/MapReduceFoundation/)
 
-1. Pawel Kaminski, [Sacramento crimes](https://github.com/pkamin/sacramentocrime/blob/master/README.md).
+1. Pawel Kaminski, [Sacramento crimes](/README.md).
