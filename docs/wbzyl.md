@@ -24,7 +24,7 @@ mongoimport -c books --type tsv --headerline < gutenberg-books.tsv
 
 Oto przykładowy dokument z kolekcji *books*:
 
-```json
+```js
 {
   "n": 116,                          // akapit #116
   "title": "The Idiot",              // z tej książki
