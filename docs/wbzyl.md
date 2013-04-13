@@ -1,4 +1,4 @@
-# Books
+# 4 Books from Project Gutenberg
 
 Do kolekcji *books* zaimportowano wszystkie akapity czterech
 książek:
