@@ -10,20 +10,17 @@ książek:
 
 Akapity ze wszystkich książek zapisano w formacie TSV
 w pliku [_gutenberg-books.tsv_](/data/tsv/gutenberg-books.tsv):
-
 ```tsv
 n	title	author	p
 4	The Idiot	Dostoyevsky, Fyodor	Some of the passengers by this particular train…
 ```
 
 Do importu danych użyto programu *mongoimport*:
-
 ```sh
 mongoimport -c books --type tsv --headerline < gutenberg-books.tsv
 ```
 
 Oto przykładowy dokument z kolekcji *books*:
-
 ```js
 {
   "n": 116,                          // akapit #116
