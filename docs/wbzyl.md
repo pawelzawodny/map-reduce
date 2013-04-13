@@ -3,13 +3,13 @@
 Do kolekcji *books* zaimportowano wszystkie akapity czterech
 książek:
 
-1. Fyodor Dostoyevsky, The Idiot
-2. G.K. Chesterton, The Man Who Knew Too Much
-3. Leo Tolstoy, War and Peace
-4. Arthur C. Doyle, The Sign of the Four
+1. Fyodor Dostoyevsky, *The Idiot*.
+2. G.K. Chesterton, *The Man Who Knew Too Much*.
+3. Leo Tolstoy, *War and Peace*.
+4. Arthur C. Doyle, *The Sign of the Four*.
 
-Wszystkie akapity zapisano w formacie TSV
-w pliku *gutenberg-books.tsv*:
+Akapity ze wszystkich książek zapisano w formacie TSV
+w pliku [_gutenberg-books.tsv_](/data/tsv/gutenberg-books.tsv):
 
 ```tsv
 n	title	author	p
@@ -33,6 +33,6 @@ Oto przykładowy dokument z kolekcji *books*:
 }
 ```
 
-Przykładowe agregacje za pomocą MapReduce
+Przykładowe agregacje MapReduce danych z kolekcji *books*
 są opisane w notatkach do wykładu
 [MapReduce w przykładach](http://sinatra.local/nosql/mongodb-mapreduce).
