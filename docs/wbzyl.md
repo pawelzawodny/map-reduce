@@ -33,3 +33,7 @@ Oto przykładowy dokument z kolekcji *books*:
 Przykładowe agregacje MapReduce danych z kolekcji *books*
 są opisane w notatkach do wykładu
 [MapReduce w przykładach](http://sinatra.local/nosql/mongodb-mapreduce).
+
+Pliki pobrania za pomocą skryptu (Bash) [get-books.sh](/scripts/tsv/get-books.sh).
+Zawartość pobranych plików skonwertowano do formatu TSV za pomocą
+skryptu (Ruby) [books-to_tsv](/scripts/tsv/books-to_tsv).
