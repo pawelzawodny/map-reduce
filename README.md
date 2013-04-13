@@ -4,4 +4,8 @@
 
 Źródło: [MapReduceFoundation: Typing of MapReduce](http://www.infosun.fim.uni-passau.de/cl/MapReduceFoundation/)
 
-1. Pawel Kaminski, [Sacramento crimes](/pkamin.md).
+
+## Nasze dane
+
+1. Włodzimierz Bzyl, [4 Books from Project Gutenberg](/docs/wbzyl.md).
+1. Paweł Kamiński, [Sacramento Crimes](/docs/pkamin.md).
