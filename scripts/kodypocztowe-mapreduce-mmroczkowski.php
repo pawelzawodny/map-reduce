@@ -17,3 +17,8 @@ $result = $db->selectCollection($mapreduce['result'])->find();
 foreach($result as $one) {
 	var_dump($one);
 }
+echo '<br><br>';
+// generowanie danych do wykresu
+foreach($result as $one) {
+	echo '[\''.$one['_id'].'\','.$one['value'].'], <br>';
+}
