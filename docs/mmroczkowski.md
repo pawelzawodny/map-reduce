@@ -13,6 +13,7 @@ $reduce = new MongoCode("function(k, val) { var count = 0;
  count += val[i]; }
  return count; }");
 ```
+Link do wykresu: [Wykres](http://misio.biz/nosql/chart.html)
 
 Generuję ilość kodów pocztowych w każdym województwie.
 
