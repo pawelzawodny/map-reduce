@@ -15,6 +15,7 @@
 1. Włodzimierz Bzyl, [4 Books from Project Gutenberg](/docs/wbzyl.md).
 1. Paweł Kamiński, [Sacramento Crimes](/docs/pkamin.md).
 1. Michał Mroczkowski, [Kody Pocztowe](/docs/mmroczkowski.md).
+1. Daniel Szymczak, [Religie](/docs/dszymczak.md).
 
 ## GitHub Archive
 
