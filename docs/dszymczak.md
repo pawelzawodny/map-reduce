@@ -1,6 +1,6 @@
 # Map Reduce
 
-Za pomoc¹ poni¿szych funkcji generowana jest lista religii (z bazy census1881) wraz z liczb¹ ich wyznawców. Pod uwagê brane s¹ osoby w przedziale wiekowym od 18 do 60 lat.
+Za pomocÄ… poniÅ¼szych funkcji generowana jest lista religii (z bazy census1881) wraz z liczbÄ… ich wyznawcÃ³w. Pod uwagÄ™ brane sÄ… osoby w przedziale wiekowym od 18 do 60 lat.
 
 
 ### Funkcja Map:
@@ -25,9 +25,9 @@ var reduceFunction = function(key, values) {
 ```
 
 
-Pe³ne dane wynikowe: [results.json](https://skydrive.live.com/redir?resid=3BDE303B2D273EC6!17114&authkey=!AL8hldB0hUHsEdE)
+PeÅ‚ne dane wynikowe: [results.json](https://skydrive.live.com/redir?resid=3BDE303B2D273EC6!17114&authkey=!AL8hldB0hUHsEdE)
 
-### Dane wynikowe (5 religii z najwiêksz¹ liczb¹ wyznawców):
+### Dane wynikowe (5 religii z najwiÄ™kszÄ… liczbÄ… wyznawcÃ³w):
 
 
 ![MapReduce - wykres](http://chart.apis.google.com/chart?chs=500x300&chbh=60,10&cht=bvo&chtt=Religie+z+najwieksza+liczba+wyznawcow&chd=t:84.7,57.6,52.1,49.2,40.2&chxt=x,y&chxl=0:|baptist|catholic|presbyterian|lutheran|methodist|1:|0|200|400|600|800|1000)
