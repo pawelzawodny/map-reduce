@@ -71,7 +71,7 @@ var res = coll.mapReduce(m, r, {out: {inline: 1}});
 
 ### Częstości występowania słów
 
-![częstości występowania słów](http://chart.googleapis.com/chart?chxl=0:|a|b|c|d|e&chxr=0,0,4&chxt=y,x&chbh=a,4,7&chs=440x220&cht=bhs&chco=4D89F9,C6D9FD&chds=0,4,0,0&chd=t:2,1,1,3,1|0,0,0,0,0&chma=50)
+![częstości występowania słów](http://chart.googleapis.com/chart?chxl=0:|a|b|c|d|e&chxr=0,0,4&chxt=y,x&chbh=a,4,7&chs=640x180&cht=bhs&chco=C03000,000000&chds=0,4,0,0&chd=t:2,1,1,3,1|0,0,0,0,0&chma=50)
 
 [Chart Wizard](https://developers.google.com/chart/image/docs/chart_wizard):
 
@@ -81,9 +81,9 @@ http://chart.googleapis.com/chart
    &chxr=0,0,4
    &chxt=y,x
    &chbh=a,4,7
-   &chs=440x220
+   &chs=640x180
    &cht=bhs
-   &chco=4D89F9,C6D9FD
+   &chco=C03000,000000
    &chds=0,4,0,0
    &chd=t:2,1,1,3,1|0,0,0,0,0
    &chma=50
