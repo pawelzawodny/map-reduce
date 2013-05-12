@@ -15,20 +15,20 @@
 
 ## Prosty przykład
 
-Łaczymy się z bazą:
+Korzystając z konsoli *mongo* łaczymy się z bazą:
 
 ```sh
-bin/mongo --username student --password sesja2013 153.19.1.202/test
+mongo --username student --password sesja2013 153.19.1.202/test
 ```
 
-Wcześniej zapisałem dane w bazie *test* kolekcji *phrases*:
+W bazie *test* kolekcji *phrases* zostały zapisane dwa dokumenty:
 
 ```javascript
 db.phrases.insert({ _id: 1, filename: "hamlet.txt",  content: "to be or not to be" });
 db.phrases.insert({ _id: 2, filename: "phrases.txt", content: "to wit" });
 ```
 
-TODO (opisać):
+Na konsoli mongo wkeljamy kod funkcji map (*m*) i funkcji reduce (*r*):
 
 ```js
 m = function() {
@@ -39,11 +39,31 @@ m = function() {
 r = function(key, values) {
   return Array.sum(values);
 };
+```
 
-coll = db.phrases;
+Następnie uruchamiamy obliczenia MapReduce:
 
-coll.mapReduce(m, r, {out: {inline: 1}});
+```js
+db.phrases.mapReduce(m, r, {out: {inline: 1}});
+{
+  "results": [
+    { "_id": "be",  "value": 2 },
+    { "_id": "not", "value": 1 },
+    { "_id": "or",  "value": 1 },
+    { "_id": "to",  "value": 3 },
+    { "_id": "wit", "value": 1 }
+  ],
+  "timeMillis": 24,
+  "counts": {
+    "input": 2, "emit": 8, "reduce": 2, "output": 5
+  },
+  "ok": 1,
+}
+```
 
+Albo możemy zapamiętać wyniki w zmiennej:
+
+```js
 var res = coll.mapReduce(m, r, {out: {inline: 1}});
 ```
 
