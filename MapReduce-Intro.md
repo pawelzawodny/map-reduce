@@ -7,14 +7,14 @@
 3. Marijn Haverbeke,
    [Eloquent JavaScript](http://www.bt4.pl/kursy/javascript/wszystko-jasne/)
 4. Proste MapReduce najczęściej wyliczają statystyki (średnie, sumy)
-   zebranych danych. Klasyczny przykład – zliczanie liczby słów.
+   zebranych danych. Klasyczny przykład – zliczanie częstości występowania słów.
 5. Jak przedstawić wyniki obliczeń MapReduce:
   - [Data-Driven Documents](http://d3js.org/)
   - Włodzimierz Gajda,
     [Google Chart API — prosty sposób umieszczania wykresów na stronach WWW](http://gajdaw.pl/varia/google-chart-api/print.html)
 
 
-## Proste MapReduce
+### Proste MapReduce – częstości występowania słów
 
 Korzystając z konsoli *mongo* łaczymy się z bazą:
 
