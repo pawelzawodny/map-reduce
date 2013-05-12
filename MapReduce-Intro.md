@@ -69,20 +69,20 @@ Albo możemy zapamiętać wyniki w zmiennej:
 var res = coll.mapReduce(m, r, {out: {inline: 1}});
 ```
 
-![częstości występowania słów](http://chart.googleapis.com/chart?chxl=0:|a|b|c|d|e&chxr=0,0,4|1,0,3&chxt=y,x&chbh=a,4&chs=640x200&cht=bhs&chco=C03000,000000&chds=0,4,0,0&chd=t:2,1,3,1,1|0,0,0,0,0&chma=100&chtt=częstości+występowania+słów)
+![częstości występowania słów](chart.googleapis.com/chart?chxl=0:|be|not|or|to|wit&chxr=0,0,4|1,0,3&chxt=y,x&chbh=a&chs=640x180&cht=bhs&chco=C03000,000000&chds=0,3,0,0&chd=t:2,1,3,1,1|0,0,0,0,0&chma=100&chtt=częstości+występowania+słów)
 
 [Chart Wizard](https://developers.google.com/chart/image/docs/chart_wizard):
 
 ```
 http://chart.googleapis.com/chart
-   ?chxl=0:|a|b|c|d|e
-   &chxr=0,0,4|1,0,4
+   ?chxl=0:|be|not|or|to|wit
+   &chxr=0,0,4|1,0,3
    &chxt=y,x
-   &chbh=a,4
-   &chs=640x200
+   &chbh=a
+   &chs=640x180
    &cht=bhs
-   &chco=4D89F9,C6D9FD
-   &chds=0,4,0,0
+   &chco=C0300,000000
+   &chds=0,3,0,0
    &chd=t:2,1,3,1,1|0,0,0,0,0
    &chma=100
    &chtt=częstości+występowania+słów
@@ -93,15 +93,15 @@ Wykres powyżej powstał przy użyciu następujących
 
 ```
 cht=bhs                                // typ wykresu: bar chart stacked
-chs=640x200                            // wymiary wykresu
-chd=t:2,1,1,3,1|0,0,0,0                // dane wykresu
+chs=640x180                            // wymiary wykresu
+chd=t:2,1,3,1,1|0,0,0,0,0              // dane wykresu
 
-chco=4d89f9,c6d9fd                     // kolory
+chco=C03000,000000                     // kolory
+chxl=0:|be|not|or|to|wit|1:|0|1|2|3    // etykiety
+chbh=a                                 // szerokości i odstępy słupków (automatycznie)
+chma=100                               // lewy margines
+
 chxt=y,x                               // osie
-chxl=0:|be|not|or|to|wit|1:|0|2|4|     // etykiety
-chbh=20,10                             // szerokości i odstępy słupków
-chds=0,3                               // przeskaluj [0,3] -> [0,400]
-chma=100,50                            // lewy,prawy margines
+chds=0,3,0,0                           // scaling for stacked values: min,max,min,max
+chxr=0,0,4|1,0,3                       // osie: y:0..4, x:0..3
 ```
-
-http://chart.googleapis.com/chart?chxl=0:|a|b|c|d|e&chxr=0,0,4|1,0,4&chxt=y,x&chbh=a,4,7&chs=640x200&cht=bhs&chco=C03000,000000&chds=0,4,0,0&chd=t:2.246,2.35,3.461,2.706,2.44|0,0,0,0,0&chma=100&chtt=częstości+występowania+słów
