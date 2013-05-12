@@ -29,8 +29,7 @@ db.phrases.insert({ _id: 1, filename: "hamlet.txt",  content: "to be or not to b
 db.phrases.insert({ _id: 2, filename: "phrases.txt", content: "to wit" });
 ```
 
-Na konsoli mongo wklejamy kod funkcji map *m* i funkcji reduce *r*
-wykonującej obliczenia na tych dwóch dokumentach:
+Na konsoli mongo wklejamy kod funkcji map *m* i funkcji reduce *r*:
 
 ```js
 m = function() {
