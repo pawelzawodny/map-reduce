@@ -62,7 +62,7 @@ db.phrases.mapReduce(m, r, {out: {inline: 1}});
 }
 ```
 
-Albo możemy zapamiętać wyniki w zmiennej:
+Wyniki możemy zapamiętać w zmiennej:
 
 ```js
 var res = coll.mapReduce(m, r, {out: {inline: 1}});
