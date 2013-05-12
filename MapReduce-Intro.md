@@ -69,8 +69,7 @@ Albo możemy zapamiętać wyniki w zmiennej:
 var res = coll.mapReduce(m, r, {out: {inline: 1}});
 ```
 
-
-## Jakaś grafika?
+### Częstości występowania słów
 
 ![częstości występowania słów](http://chart.googleapis.com/chart?chxl=0:|a|b|c|d|e&chxr=0,0,4&chxt=y,x&chbh=a,4,7&chs=440x220&cht=bhs&chco=4D89F9,C6D9FD&chds=0,4,0,0&chd=t:2,1,1,3,1|0,0,0,0,0&chma=50)
 
