@@ -72,4 +72,27 @@ var res = coll.mapReduce(m, r, {out: {inline: 1}});
 
 ## Jakaś grafika?
 
-TODO
+![częstości występowania słów](http://chart.apis.google.com/chart?cht=bhs&chs=400x150&chd=t:2,1,1,3,1|0,0,0,0,0&chbh=20,10&chds=0,3)
+
+Wykres powyżej powstał przy użyciu następujących
+[parametrów](https://developers.google.com/chart/image/docs/gallery/bar_charts?hl=pl):
+
+```
+cht=bhs                                // typ wykresu: bar chart stacked
+chs=400x150                            // wymiary wykresu: 150 == 5*(20+10)
+chd=t:2,1,1,3,1|0,0,0,0                // dane wykresu
+
+chco=4d89f9,c6d9fd                     // kolory
+chxt=y,x                               // osie
+chxl=0:|be|not|or|to|wit|1:|0|1|2|3|4| // etykiety
+chbh=20,10                             // szerokości i odstępy słupków
+chds=0,3                               // przeskaluj [0,3] -> [0,400]
+```
+
+Wygenerowany URL:
+
+```
+http://chart.apis.google.com/chart?cht=bhs&chs=400x150&chd=t:2,1,1,3,1|0,0,0,0,0&chbh=20,10&chds=0,3
+```
+
+Zobacz też [Chart Wizard](https://developers.google.com/chart/image/docs/chart_wizard).
