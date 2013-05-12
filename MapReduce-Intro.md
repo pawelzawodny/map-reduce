@@ -103,3 +103,11 @@ chxt=y,x                               // osie
 chds=0,3,0,0                           // scaling for stacked values: min,max,min,max
 chxr=0,0,4|1,0,3                       // osie: y:0..4, x:0..3
 ```
+
+## Obliczenia MapReduce & Google
+
+* [MapReduce: Simplified Data Processing on Large Clusters](http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/pl//archive/mapreduce-osdi04.pdf)
+* Wikipedia: [MapReduce](http://en.wikipedia.org/wiki/MapReduce)
+* [Mining of Massive Datasets](http://infolab.stanford.edu/~ullman/mmds.html):
+  - [Map-Reduce and the New Software Stack](http://infolab.stanford.edu/~ullman/mmds/ch2.pdf) (rozdział 2)
+  - [Link Analysis](http://infolab.stanford.edu/~ullman/mmds/ch5.pdf) (rozdział 5)
