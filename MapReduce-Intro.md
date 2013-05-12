@@ -71,7 +71,7 @@ var res = coll.mapReduce(m, r, {out: {inline: 1}});
 
 ![częstości występowania słów](http://chart.googleapis.com/chart?chxl=0:|be|not|or|to|wit&chxr=0,0,4|1,0,3&chxt=y,x&chbh=a&chs=640x180&cht=bhs&chco=C03000,000000&chds=0,3,0,0&chd=t:2,1,3,1,1|0,0,0,0,0&chma=100&chtt=częstości+występowania+słów)
 
-[Chart Wizard](https://developers.google.com/chart/image/docs/chart_wizard):
+Parametry wykresu z [chart wizard](https://developers.google.com/chart/image/docs/chart_wizard):
 
 ```
 http://chart.googleapis.com/chart
@@ -88,8 +88,7 @@ http://chart.googleapis.com/chart
    &chtt=częstości+występowania+słów
 ```
 
-Wykres powyżej powstał przy użyciu następujących
-[parametrów](https://developers.google.com/chart/image/docs/gallery/bar_charts?hl=pl):
+Opis [parametrów](https://developers.google.com/chart/image/docs/gallery/bar_charts?hl=pl):
 
 ```
 cht=bhs                                // typ wykresu: bar chart stacked
