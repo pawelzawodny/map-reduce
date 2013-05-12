@@ -72,9 +72,26 @@ var res = coll.mapReduce(m, r, {out: {inline: 1}});
 
 ## Jakaś grafika?
 
-![częstości występowania słów](http://chart.apis.google.com/chart?cht=bhs&chs=400x150&chd=t:2,1,1,3,1|0,0,0,0,0&chbh=20,10&chds=0,3)
+![częstości występowania słów](http://chart.googleapis.com/chart?chxl=0:|a|b|c|d|e&chxr=0,0,4&chxt=y,x&chbh=a,4,7&chs=440x220&cht=bhs&chco=4D89F9,C6D9FD&chds=0,4,0,0&chd=t:2,1,1,3,1|0,0,0,0,0&chma=50)
 
-Wykres powyżej powstał przy użyciu następujących
+[Chart Wizard](https://developers.google.com/chart/image/docs/chart_wizard):
+
+```
+http://chart.googleapis.com/chart
+   ?chxl=0:|a|b|c|d|e
+   &chxr=0,0,4
+   &chxt=y,x
+   &chbh=a,4,7
+   &chs=440x220
+   &cht=bhs
+   &chco=4D89F9,C6D9FD
+   &chds=0,4,0,0
+   &chd=t:2,1,1,3,1|0,0,0,0,0
+   &chma=50
+   &chtt=częstości+występowania+słów
+```
+
+TODO: Wykres powyżej powstał przy użyciu następujących
 [parametrów](https://developers.google.com/chart/image/docs/gallery/bar_charts?hl=pl):
 
 ```
@@ -84,15 +101,8 @@ chd=t:2,1,1,3,1|0,0,0,0                // dane wykresu
 
 chco=4d89f9,c6d9fd                     // kolory
 chxt=y,x                               // osie
-chxl=0:|be|not|or|to|wit|1:|0|1|2|3|4| // etykiety
+chxl=0:|be|not|or|to|wit|1:|0|2|4|     // etykiety
 chbh=20,10                             // szerokości i odstępy słupków
 chds=0,3                               // przeskaluj [0,3] -> [0,400]
+chma=100,50                            // lewy,prawy margines
 ```
-
-Wygenerowany URL:
-
-```
-http://chart.apis.google.com/chart?cht=bhs&chs=400x150&chd=t:2,1,1,3,1|0,0,0,0,0&chbh=20,10&chds=0,3
-```
-
-Zobacz też [Chart Wizard](https://developers.google.com/chart/image/docs/chart_wizard).
