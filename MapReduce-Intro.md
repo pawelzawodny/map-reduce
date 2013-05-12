@@ -6,14 +6,15 @@
    [link](https://github.com/languages)
 3. Marijn Haverbeke,
    [Eloquent JavaScript](http://www.bt4.pl/kursy/javascript/wszystko-jasne/)
-4. Zliczanie słów
+4. Proste MapReduce najczęściej wyliczają statystyki (średnie, sumy)
+   zebranych danych. Klasyczny przykład – zliczanie liczby słów.
 5. Jak przedstawić wyniki obliczeń MapReduce:
   - [Data-Driven Documents](http://d3js.org/)
   - Włodzimierz Gajda,
     [Google Chart API — prosty sposób umieszczania wykresów na stronach WWW](http://gajdaw.pl/varia/google-chart-api/print.html)
 
 
-## Prosty przykład
+## Proste MapReduce
 
 Korzystając z konsoli *mongo* łaczymy się z bazą:
 
@@ -28,7 +29,8 @@ db.phrases.insert({ _id: 1, filename: "hamlet.txt",  content: "to be or not to b
 db.phrases.insert({ _id: 2, filename: "phrases.txt", content: "to wit" });
 ```
 
-Na konsoli mongo wkeljamy kod funkcji map (*m*) i funkcji reduce (*r*):
+Na konsoli mongo wkeljamy kod funkcji map (*m*) i funkcji reduce (*r*)
+wykonującej obliczenia na tych dwóch dokumentach:
 
 ```js
 m = function() {
