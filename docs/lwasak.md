@@ -211,3 +211,6 @@ Statystyka mapowań i redukcji:
 ### Przykładowa reprezentacja danych w postaci wykresu.
 
 <img src="http://chart.apis.google.com/chart?cht=bvs&chs=1000x300&chd=t:2.14,2.10,1.21,2.01,2.05,1.10&chds=0,3&chbh=50,80&chco=0000ff&chxt=x,y&chxl=0:|DOLNO%C5%9AL%C4%84SKIE|LUBUSKIE|MAZOWIECKIE|OPOLSKIE|PODLASKIE|POMORSKIE|1:||0.5|1|1.5|2|2.5|3" />
+
+## Linki
+* [Skrypt](/scripts/mapReduce_lwasak_Ceny.js)
