@@ -160,7 +160,8 @@ results.length; // 22433
 
 ### Zadania
 
-Ściąga z [Array](https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects):
+Może się przydać – ściąga
+z [Array](https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects):
 
 * Iterating over arrays – *for*
 * Array Methods – *sort*, *forEach*, *map*, *filter*, *reduce*
@@ -173,9 +174,9 @@ wyliczonej powyżej.
 
 2\. Ile jest wszystkich słów w akapitach w kolekcji *books*?
 
-2\. Które słowa występują najczęściej?
+3\. Które słowa występują najczęściej?
 
-3\. Jaką część wszystkich słów stanowią słowa z „top 10”?
+4\. Jaką część wszystkich słów stanowią słowa z „top 10”?
 
 
 ### Rozwiązania
@@ -192,4 +193,4 @@ ones[100];   // _forgiven_
 
 ```js
 var total = results.reduce(function(acc, x) { return acc+x.value; }, 0);
-``
+```
