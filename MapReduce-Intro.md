@@ -134,7 +134,7 @@ coll.find({n: 8, author: /^Chest/});
 ```
 
 Kopiujemy [kod funkcji map i reduce](http://wbzyl.inf.ug.edu.pl/nosql/mongodb-mapreduce)
-(sekcja „Word Count”)::
+(sekcja „Word Count”):
 
 ```js
 m = function() {
