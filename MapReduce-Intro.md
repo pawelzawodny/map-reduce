@@ -111,3 +111,81 @@ chxr=0,0,4|1,0,3                       // osie: y:0..4, x:0..3
 * [Mining of Massive Datasets](http://infolab.stanford.edu/~ullman/mmds.html):
   - [Map-Reduce and the New Software Stack](http://infolab.stanford.edu/~ullman/mmds/ch2.pdf) (rozdział 2)
   - [Link Analysis](http://infolab.stanford.edu/~ullman/mmds/ch5.pdf) (rozdział 5)
+
+
+## 4 Books from Project Gutenberg
+
+* [4 Books from Project Gutenberg](https://github.com/nosql/map-reduce/blob/master/docs/wbzyl.md)
+
+Łączymy się z bazą:
+
+```sh
+mongo --username student --password sesja2013 153.19.1.202/test
+```
+
+Tym razem będziemy wykonywać obliczenia na bazie *books*:
+
+```js
+db.books.count() // 18786
+
+coll = db.books;
+coll.find({n: 8});
+coll.find({n: 8, author: /^Chest/});
+```
+
+Kopiujemy [kod funkcji map i reduce](http://wbzyl.inf.ug.edu.pl/nosql/mongodb-mapreduce)
+(sekcja „Word Count”)::
+
+```js
+m = function() {
+  res = this.p.toLowerCase().match(/[\w\u00C0-\u017F]+/g);
+  if (res) {
+    res.forEach(function(word) {
+      emit(word, 1);
+    });
+  }
+};
+r = function(key, values) {
+  return Array.sum(values);
+};
+var res = db.books.mapReduce(m, r, {out: {inline: 1}});
+```
+
+Wyniki znajdziemy w tablicy *res.results*:
+
+```js
+var results = res.results;
+results.length; // 22433
+```
+
+### Zadania
+
+Ściąga z [Array](https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Predefined_Core_Objects):
+
+* Iterating over arrays – *for*
+* Array Methods – *sort*, *forEach*, *map*, *filter*, *reduce*
+
+1\. W tablicy *results*, ile słów występuje raz, ile dwa razy, itd?
+
+2\. Ile jest wszystkich słów w akapitach w kolekcji *books*?
+
+2\. Które słowa występują najczęściej?
+
+3\. Jaką część wszystkich słów stanowią słowa z „top 10”?
+
+
+### Rozwiązania
+
+1\. 7550
+
+```js
+var ones = results.filter(function(x) { return x.value==1; });
+ones.length;
+ones[100];   // _forgiven_
+```
+
+2\. 925055
+
+```js
+var total = results.reduce(function(acc, x) { return acc+x.value; }, 0);
+``
