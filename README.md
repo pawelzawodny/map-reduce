@@ -17,6 +17,7 @@
 1. Michał Mroczkowski, [Kody Pocztowe](/docs/mmroczkowski.md).
 1. Daniel Szymczak, [Religie](/docs/dszymczak.md).
 1. Łukasz Wasak, [Ceny Towarów w Polsce](/docs/lwasak.md).
+1. Ryszard Madejski, [Samochody w USA](/docs/xjedam.md).
 
 ## GitHub Archive
 
