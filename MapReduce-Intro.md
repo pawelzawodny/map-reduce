@@ -181,7 +181,7 @@ wyliczonej powyżej.
 
 ### Rozwiązania
 
-1\. 7550
+1\. **7550**
 
 ```js
 var ones = results.filter(function(x) { return x.value==1; });
@@ -189,7 +189,7 @@ ones.length;
 ones[100];   // _forgiven_
 ```
 
-2\. 925055
+2\. **925055**
 
 ```js
 var total = results.reduce(function(acc, x) { return acc+x.value; }, 0);
