@@ -165,7 +165,11 @@ results.length; // 22433
 * Iterating over arrays – *for*
 * Array Methods – *sort*, *forEach*, *map*, *filter*, *reduce*
 
-1\. W tablicy *results*, ile słów występuje raz, ile dwa razy, itd?
+
+Wszystkie pytania odnoszą się do tablicy **results**
+wyliczonej powyżej.
+
+1\. Ile słów występuje raz, ile dwa razy, itd?
 
 2\. Ile jest wszystkich słów w akapitach w kolekcji *books*?
 
