@@ -81,18 +81,7 @@ db.cars.mapReduce(m, r, {out: "makes_avg_HP"});
 
 ### Wykres dla losowo wybranych marek
 
-<img src="http://chart.googleapis.com/chart
-   ?chxl=0:|jaguar|infiniti|hyundai|honda|ford|dodge|daewoo|chrysler|chevrolet
-   &chxr=a
-   &chxt=y,x
-   &chbh=a
-   &chs=640x320
-   &cht=bhg
-   &chco=4D89D9,C6D9FD
-   &chds=a
-   &chd=t:313,212,126,148,185,228,119,189,184|20.09,23.66,28.5,30.37,25.14,23.77,27.6,23.8,27.97
-   &chma=100
-   &chtt=moc+marek" />
+<img src="http://chart.googleapis.com/chart?chxl=0:|jaguar|infiniti|hyundai|honda|ford|dodge|daewoo|chrysler|chevrolet&chxr=a&chxt=y,x&chbh=a&chs=640x320&cht=bhg&chco=4D89D9,C6D9FD&chds=a&chd=t:313,212,126,148,185,228,119,189,184|20.09,23.66,28.5,30.37,25.14,23.77,27.6,23.8,27.97&chma=100&chtt=moc+marek" />
 
 ## Linki
 * [Skrypt](/scripts/mapreduce_xjedam.js)
