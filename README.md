@@ -20,7 +20,7 @@
 1. Ryszard Madejski, [Samochody w USA](/docs/xjedam.md).
 1. Aneta Budner, [Adresy IP](/docs/abudner.md).
 1. Urszula Sawicka, [Popularne nazwy produktów](/docs/usawicka.md).
-
+1. Jan Mudry, [Obliczenie liczby pi metodą Monte Carlo](/docs/jmudry.md).
 
 ## GitHub Archive
 
