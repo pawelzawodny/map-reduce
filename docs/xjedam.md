@@ -82,7 +82,7 @@ db.cars.mapReduce(m, r, {out: "makes_avg_HP"});
 ### Wykres dla losowo wybranych marek
 Wykres przedstawia średnią moc i średnie zuzycie paliwa samochodów produkowanych przez daną firmę
 
-![Wykres Moc i zużycie paliwa różnych marek samochodów](/images/xjedam_chart.png)
+![Wykres Moc i zużycie paliwa różnych marek samochodów](https://raw.github.com/nosql/map-reduce/master/images/xjedam_chart.png)
 
 ```
 http://chart.googleapis.com/chart
