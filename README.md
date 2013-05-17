@@ -22,6 +22,7 @@
 1. Urszula Sawicka, [Popularne nazwy produktów](/docs/usawicka.md).
 1. Jan Mudry, [Obliczenie liczby pi metodą Monte Carlo](/docs/jmudry.md).
 1. Jakub Martin, [Imieniny](/docs/jmartin.md).
+1. Alicja Kopczyńska, [Bazyliki](/docs/akopczynska.md).
 
 ## GitHub Archive
 
