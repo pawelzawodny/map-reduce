@@ -23,6 +23,7 @@
 1. Jan Mudry, [Obliczenie liczby pi metodą Monte Carlo](/docs/jmudry.md).
 1. Jakub Martin, [Imieniny](/docs/jmartin.md).
 1. Alicja Kopczyńska, [Bazyliki](/docs/akopczynska.md).
+1. Dorian Sawa, [Kody pocztowe](/docs/dsawa.md).
 
 ## GitHub Archive
 
