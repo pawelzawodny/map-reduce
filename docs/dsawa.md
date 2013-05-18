@@ -3,9 +3,9 @@
 ### *Dorian Sawa*
 
 Użyłem tej samej kolekcji kodów pocztowych co w projekcie z aggregacjami.
+MapReduce wykorzystałem do przedstawienia faktycznej liczby kodów pocztowych dla województw.
 
-Pierwsza funkcja mapująca:
-### Map:
+### Pierwsza funkcja map:
 
 ```javascript
 var map = function () {
@@ -13,7 +13,7 @@ var map = function () {
 };
 ```
 
-### Reduce:
+### Funkcja Reduce:
 
 ```javascript
 var reduce = function (key, values) {
@@ -25,14 +25,12 @@ var reduce = function (key, values) {
 };
 ```
 
-### Uruchomienie:
+### Uruchomienie i pierwsze wyniki:
 ```
 db.zipcodes.mapReduce(map, reduce, { out: 'kody_results'});
 ```
 
-
 Stworzyło mi to 'pośrednią' kolekcję, gdzie dokumenty są takiej postaci:
-
 ```json
 {
 	"_id" : {
@@ -54,16 +52,16 @@ Stworzyło mi to 'pośrednią' kolekcję, gdzie dokumenty są takiej postaci:
 }
 ```
 
-By poprawnie policzyć teraz unikalne wystąpienia kodów, potrzebna będzie
-kolejna funkcja mapująca:
+By poprawnie policzyć teraz unikalne wystąpienia kodów, potrzebna będzie kolejna funkcja mapująca.
 
+### Druga funkcja map
 ```javascript
 var map2 = function () {
    emit(this['_id']['wojewodztwo'], {count: 1});
 };
 ```
 
-Kolejne wywołanie:
+### Wywołanie na kolekcji pośredniczącej i wyniki:
 
 ```
 db.kody_results.mapReduce(map2, reduce, { out: 'kody_for_woj_uniq'});
@@ -71,7 +69,7 @@ db.kody_results.mapReduce(map2, reduce, { out: 'kody_for_woj_uniq'});
 
 Ostateczny wynik:
 ```
-db.kody_for_woj_uniq.find();
+> db.kody_for_woj_uniq.find();
 { "_id" : "dolnośląskie", "value" : { "count" : 1693 } }
 { "_id" : "kujawsko-pomorskie", "value" : { "count" : 958 } }
 { "_id" : "lubelskie", "value" : { "count" : 851 } }
@@ -92,6 +90,4 @@ db.kody_for_woj_uniq.find();
 ![](../images/dsawa_diagram.png)
 
 ### Plik JS z komendami
-
 [Klik](/scripts/mapreduce_dsawa.js)
-
