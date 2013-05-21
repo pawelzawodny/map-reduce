@@ -60,5 +60,5 @@ db.kody_pocztowe.mapReduce(map,reduce,{ out : 'powiaty'})
 
 ![](../images/radomski.png)
 
-### Plik JS z komendami
-[Klik](/scripts/mapReduce_aradomski.js)
+
+### [Plik JS z komendami](/scripts/mapReduce_aradomski.js)
