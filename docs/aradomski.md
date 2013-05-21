@@ -55,6 +55,9 @@ db.kody_pocztowe.mapReduce(map,reduce,{ out : 'powiaty'})
 { "_id" : { "powiat" : "buski" }, "value" : { "count" : 243 } }
 
 ```
+
+### Fragment wykresu
+
 ![](../images/radomski.png)
 
 ### Plik JS z komendami
