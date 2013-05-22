@@ -1,4 +1,4 @@
-# Kody pocztowe
+# Aktywność userów Githuba
 
 ### *Paweł Śląski*
 
