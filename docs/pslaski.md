@@ -35,7 +35,7 @@ db.github_sunday_evening.mapReduce(map, reduce, { out: 'codder_results'});
 Następnie wynik posortowałem według aktywności i wybrałem 10 najbardziej aktywnym userów. 
 Znów wystąpił problem z zagnieżdzonym polem w mapreduce (tym razem próba sortowania), więc czynności te wykonałem za pomocą agregacji, a przy okazji "spłaszczyłem" wyniki aby lepiej się prezentowały
 
-```
+```ruby
 result = codders.aggregate([{'$sort' => {'value.count' => -1}},
                             {'$limit' => 10},
                             {'$project' => {:_id => 0, :user => '$_id.codder', :count => '$value.count'}}])
