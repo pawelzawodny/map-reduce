@@ -1,8 +1,8 @@
-# Aktywność userów Githuba
+# Aktywność userów Githuba - ta ostatnia niedziela
 
 ### *Paweł Śląski*
 
-Użyłem danych z github archive z dnia 19.05.2013 z godzin 20:00 - 24:00 (niedziela, wieczór)
+Użyłem danych z Github Archive z dnia 19.05.2013 z godzin 20:00 - 24:00 (niedziela, wieczór)
 
 Wykorzystałem je do policzenia, który user był najaktywniejszy w danym okresie.
 

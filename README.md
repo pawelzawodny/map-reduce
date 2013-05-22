@@ -24,7 +24,7 @@
 1. Jakub Martin, [Imieniny](/docs/jmartin.md).
 1. Alicja Kopczyńska, [Bazyliki](/docs/akopczynska.md).
 1. Dorian Sawa, [Kody pocztowe](/docs/dsawa.md).
-1. Paweł Śląski, [Kody pocztowe](/docs/pslaski.md).
+1. Paweł Śląski, [Aktywność userów Githuba](/docs/pslaski.md).
 
 ## GitHub Archive
 
