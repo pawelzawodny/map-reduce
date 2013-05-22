@@ -25,6 +25,8 @@
 1. Alicja Kopczyńska, [Bazyliki](/docs/akopczynska.md).
 1. Dorian Sawa, [Kody pocztowe](/docs/dsawa.md).
 1. Jan Pawlukiewicz, [Samochody w USA](/docs/joshuaBE.md).
+1. Paweł Śląski, [Aktywność userów Githuba](/docs/pslaski.md).
+
 
 ## GitHub Archive
 
