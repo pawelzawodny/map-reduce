@@ -58,5 +58,5 @@ Rezultat
 
 ![](../images/pslaski_codders.png)
 
-### Plik JS z komendami
+### Plik JS
 [Klik](/scripts/mapreduce_pslaski.js)
