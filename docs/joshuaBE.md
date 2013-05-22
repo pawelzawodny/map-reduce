@@ -73,4 +73,4 @@ Po wywyłaniu całego skryptu otrzymałem link do Google Chart:
 ![](../images/jpawlukiewicz/reduce2.png)
 
 ### Cały skrypt
-[Tutaj](/scripts/mapreduce_jpawlukiewicz.js)
+[Tutaj](../scripts/mapreduce_jpawlukiewicz.js)
