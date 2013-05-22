@@ -6,7 +6,7 @@ Użyłem danych z Github Archive z dnia 19.05.2013 z godzin 20:00 - 24:00 (niedz
 
 Wykorzystałem je do policzenia, który user był najaktywniejszy w danym okresie.
 
-Próba policzenia, który język był najpopularniejszy tego wieczoru była nieudana (problem z dostaniem się do zagnieżdzonego pola obiektu w mapreduce)
+Próba policzenia, który język był najpopularniejszy tego wieczoru była nieudana (problem z dostępem do zagnieżdzonego pola obiektu w mapreduce)
 
 ### Funkcja Map:
 
