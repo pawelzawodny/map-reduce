@@ -33,7 +33,7 @@ var reduce = function (key, values) {
 db.github_sunday_evening.mapReduce(map, reduce, { out: 'codder_results'});
 ```
 Następnie wynik posortowałem według aktywności i wybrałem 10 najbardziej aktywnym userów 
-Znów wystąpił problem z zagnieżdzonym polem w mapreduce (tym razem próba sortowania), więc czynności tego wykonałem w shellu na kolekcji
+Znów wystąpił problem z zagnieżdzonym polem w mapreduce (tym razem próba sortowania), więc czynności te wykonałem w shellu na kolekcji
 
 ```
 db.codder_results.find().sort({"value.count" : -1}).limit(10)

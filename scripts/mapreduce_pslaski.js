@@ -23,8 +23,3 @@ db.github_sunday_evening.mapReduce(map, reduce, { out: 'codder_results'});  // s
 
 db.github_sunday_evening.mapReduce(map2, reduce, { out: 'lang_results'}); */
 
-
-
-var map2 = function () {
-   emit(this['_id']['codder'], {count: 1});
-};
