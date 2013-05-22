@@ -1,5 +1,7 @@
 ## Średnia ilość kodów pocztowych w województwie
-## Michał Mroczkowski
+
+### *Michał Mroczkowski*
+
 ### Próbka danych:
 
 ```json
