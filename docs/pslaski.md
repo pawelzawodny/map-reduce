@@ -43,7 +43,7 @@ result = codders.aggregate([{'$sort' => {'value.count' => -1}},
 
 Rezultat
 
-```json
+```
 {"user"=>"boost-jenkins", "count"=>1230.0}
 {"user"=>"test8590", "count"=>148.0}
 {"user"=>"non3", "count"=>145.0}
