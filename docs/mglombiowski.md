@@ -79,3 +79,7 @@ db.pole.findOne();
 ```
 ~=3182.31
 ```
+
+####Skrypt
+
+[Skrypt](/scripts/mapreduce_mglombiowski.js)
