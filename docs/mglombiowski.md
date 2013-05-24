@@ -1,6 +1,6 @@
-#Map Reduce  - Ca�kowanie metod� prostok�t�w
+﻿#Map Reduce  - Całkowanie metodą prostokątów
 
-### by Marcin G�ombiowski
+### by Marcin Głombiowski
 
 
 -----
@@ -8,11 +8,11 @@
 
 
 
-Jest to skrypt, kt�ry zape�nia baz� rekordami o kolejnych warto�ciach, a potem przeprowadza ich redukcj� do jednej warto�ci jak� jest pole powierzchni.
+Jest to skrypt, który zapełnia bazę rekordami o kolejnych wartościach, a potem przeprowadza ich redukcję do jednej wartości jaką jest pole powierzchni.
 
 ------
 
-####Definicja podstawowych warto�ci:
+####Definicja podstawowych wartości:
 
 ```js
 var split = 200;
@@ -20,7 +20,7 @@ var len = 100;
 var jump = split/len;
 ```
 
-####Funkcje zape�niaj�ce baz� 
+####Funkcje zapełniające bazę 
 ```js
 var fill = function() {
 
@@ -41,7 +41,7 @@ var func = function(val) {
 };
 ```
 
-####Funkcje odpowiedzialne kolejno za mapowanie i redukcj�
+####Funkcje odpowiedzialne kolejno za mapowanie i redukcję
 ```js
 var map = function() {
 
@@ -60,7 +60,7 @@ var reduce = function(key, val) {
 };
 ```
 
-####Wywo�anie
+####Wywołanie
 ```js
 db.test.mapReduce(map, reduce, {out: "pole"});
 ```
@@ -75,9 +75,7 @@ db.pole.findOne();
 { "_id" : "pole", "value" : 3183.0334117218044 }
 ```
 
-[warto�� z wolframalpha.com](http://www.wolframalpha.com/input/?i=integral+from+0+to+99+of+sin%28%28PI*x%29+%2F+100%29+*+50)
+[wartość z wolframalpha.com](http://www.wolframalpha.com/input/?i=integral+from+0+to+99+of+sin%28%28PI*x%29+%2F+100%29+*+50)
 ```
 ~=3182.31
 ```
-
-
