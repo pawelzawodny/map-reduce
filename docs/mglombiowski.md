@@ -1,6 +1,6 @@
-#Map Reduce  - Ca³kowanie metod¹ prostok¹tów
+#Map Reduce  - Caï¿½kowanie metodï¿½ prostokï¿½tï¿½w
 
-### by Marcin G³ombiowski
+### by Marcin Gï¿½ombiowski
 
 
 -----
@@ -8,11 +8,11 @@
 
 
 
-Jest to skrypt, który zape³nia bazê rekordami o kolejnych wartoœciach, a potem przeprowadza ich redukcjê do jednej wartoœci jak¹ jest pole powierzchni.
+Jest to skrypt, ktï¿½ry zapeï¿½nia bazï¿½ rekordami o kolejnych wartoï¿½ciach, a potem przeprowadza ich redukcjï¿½ do jednej wartoï¿½ci jakï¿½ jest pole powierzchni.
 
 ------
 
-####Definicja podstawowych wartoœci:
+####Definicja podstawowych wartoï¿½ci:
 
 ```js
 var split = 200;
@@ -20,7 +20,7 @@ var len = 100;
 var jump = split/len;
 ```
 
-####Funkcje zape³niaj¹ce bazê 
+####Funkcje zapeï¿½niajï¿½ce bazï¿½ 
 ```js
 var fill = function() {
 
@@ -41,7 +41,7 @@ var func = function(val) {
 };
 ```
 
-####Funkcje odpowiedzialne kolejno za mapowanie i redukcjê
+####Funkcje odpowiedzialne kolejno za mapowanie i redukcjï¿½
 ```js
 var map = function() {
 
@@ -60,7 +60,7 @@ var reduce = function(key, val) {
 };
 ```
 
-####Wywo³anie
+####Wywoï¿½anie
 ```js
 db.test.mapReduce(map, reduce, {out: "pole"});
 ```
@@ -75,7 +75,7 @@ db.pole.findOne();
 { "_id" : "pole", "value" : 3183.0334117218044 }
 ```
 
-![wartoœæ z wolframalpha.com](http://www.wolframalpha.com/input/?i=integral+from+0+to+99+of+sin%28%28PI*x%29+%2F+100%29+*+50)
+[wartoï¿½ï¿½ z wolframalpha.com](http://www.wolframalpha.com/input/?i=integral+from+0+to+99+of+sin%28%28PI*x%29+%2F+100%29+*+50)
 ```
 ~=3182.31
 ```
