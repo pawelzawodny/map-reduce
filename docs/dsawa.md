@@ -87,7 +87,7 @@ Ostateczny wynik:
 { "_id" : "śląskie", "value" : { "count" : 1088 } }
 { "_id" : "świętokrzyskie", "value" : { "count" : 629 } }
 ```
-![](../images/dsawa_diagram.png)
+![](../images/dsawa/dsawa_diagram.png)
 
 ### Plik JS z komendami
 [Klik](/scripts/mapreduce_dsawa.js)
