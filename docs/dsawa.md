@@ -183,8 +183,7 @@ var finalizeFunction = function (key, res) {
 
 ### Wyniki prezentuje tabela z Google Visualisation API:
 ![](../images/dsawa/dsawa_tabelka.png)
-
-![Plik z tabelą](/scripts/dsawa/tabelka.html)
+[Plik z tabelą](/scripts/dsawa/tabelka.html)
 
 ### Plik JS z komendami
 [Klik](/scripts/dsawa/mapreduce_dsawa.js)
