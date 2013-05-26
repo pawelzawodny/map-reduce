@@ -14,7 +14,7 @@ books.find()
 ```
 
 Funkcja map:
-```json
+```js
 var map = function() {
 var book_category;
 if ( this.pages >= 2000 ) 
@@ -26,7 +26,7 @@ emit(book_category, {name: this.name});
 ```
 
 Funkcja reduce:
-```json
+```js
 var reduce = function(key, values) {
   var sum = 0;
   values.forEach(function(doc) {
@@ -37,7 +37,7 @@ var reduce = function(key, values) {
 ```
 
 Uruchomienie obliczeń:
-```json
+```js
 var count  = db.books.mapReduce(map, reduce, {out: "book_results"});
 db[count.result].find()
 ```
