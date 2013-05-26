@@ -27,7 +27,7 @@
 1. Jan Pawlukiewicz, [Samochody w USA](/docs/joshuaBE.md).
 1. Paweł Śląski, [Aktywność userów Githuba](/docs/pslaski.md).
 1. Marcin Głombiowski, [Całkowanie metodą prostokątów](/docs/mglombiowski.md).
-
+1. Adam Radomski, [Kody pocztowe](/docs/aradomski.md).
 
 ## GitHub Archive
 
