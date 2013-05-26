@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Średnia ilość kodów dla miejsc</title>
+</head>
+<body>
+    <div id='table_div'></div>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+        google.load('visualization', '1', {packages: ['table']});
+        google.setOnLoadCallback(drawTable);
+        function drawTable() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Województwo');
+            data.addColumn('number', 'Ilość kodów');
+            data.addColumn('number', 'Ilość miejsc');
+            data.addColumn('number', 'Średnia');
+            data.addRows([
+                ['Dolnośląskie', 1693, 2641, 1.64],
+                ['Kujawsko-Pomorskie', 958, 3195, 1.30],
+                ['Lubelskie', 851, 3813, 1.22],
+                ['Lubuskie', 518, 1342, 1.39],
+                ['Mazowieckie', 4664, 7529, 1.62],
+                ['Małopolskie', 1518, 1960, 1.77],
+                ['Opolskie', 622, 1294, 1.48],
+                ['Podkarpackie', 523, 3190, 1.16],
+                ['Podlaskie', 781, 3570, 1.22],
+                ['Pomorskie', 1546, 2931, 1.53],
+                ['Warmińsko-Mazurskie', 779, 3447, 1.23],
+                ['Wielkopolskie', 1722, 4981, 1.35],
+                ['Zachodniopomorskie', 1886, 2778, 1.68],
+                ['Łódzkie', 1869, 4365, 1.43],
+                ['Śląskie', 1088, 1314, 1.83],
+                ['Świętokrzyskie', 629, 2876, 1.22]
+            ]);
+            var table = new google.visualization.Table(document.getElementById('table_div'));
+            table.draw(data, {
+                showRowNumber: true
+            });
+        }
+    </script>
+</body>
+</html>
