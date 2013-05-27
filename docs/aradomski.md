@@ -2,6 +2,7 @@
 
 ### *Adam Radomski*
 
+#Ilość kodów pocztowych w powiatach
 
 ### Funkcja map:
 
@@ -59,6 +60,83 @@ db.kody_pocztowe.mapReduce(map,reduce,{ out : 'powiaty'})
 ### Fragment wykresu
 
 ![](../images/radomski.png)
+
+
+### [Plik JS z komendami](/scripts/mapReduce_aradomski.js)
+
+
+#Ilość ulic w województwie
+
+### Funkcja map:
+
+```javascript
+var map = function() {
+    emit(this.wojewodztwo,{ulice: [this.ulica]});
+};
+```
+
+
+### Funkcja Reduce:
+
+```javascript
+var reduce = function(key, val) {
+    var res = {ulice:[]};
+    val.forEach(function (value) {
+        res.ulice = value.ulice.concat(res.ulice);
+    });
+    return res;
+};
+```
+### Funkcja finalize 
+```javascript
+var finalize = function(key, res) {
+	return res.ulice.length	;
+};
+```
+
+### Uruchamianie 
+
+```
+db.kody_pocztowe.mapReduce(map,reduce,{ out : { inline : true },finalize:finalize })
+```
+
+###	Fragment wyniku
+
+```
+		{
+			"_id" : "warmińsko-mazurskie",
+			"value" : 5460
+		},
+		{
+			"_id" : "wielkopolskie",
+			"value" : 12440
+		},
+		{
+			"_id" : "zachodniopomorskie",
+			"value" : 7575
+		},
+		{
+			"_id" : "łódzkie",
+			"value" : 9968
+		},
+		{
+			"_id" : "śląskie",
+			"value" : 15535
+		},
+		{
+			"_id" : "świętokrzyskie",
+			"value" : 4819
+		}
+
+
+```
+
+### Wykres
+Link:
+```
+http://chart.googleapis.com/chart?chs=560x520&cht=map:auto=0,0,0,10&chco=B3BCC0|3366CC|DC3912|FF9900|109618|990099|0099C6|DD4477|66AA00|B82E2E|316395|994499|AAAA11|6633CC|E67300|8B0707|651067&chld=PL-DS|PL-KP|PL-PM|PL-LU|PL-PD|PL-MA|PL-LB|PL-LD|PL-MZ|PL-OP|PL-PK|PL-SL|PL-SK|PL-WN|PL-WP|PL-ZP&chdl=Dolnośląskie|Kujawsko-Pomorskie|Pomorskie|Lubelskie|Podlaskie|Małopolskie|Lubuskie|Łódzkie|Mazowieckie|Opolskie|Podkarpackie|Śląskie|Świętokrzyskie|Warmińsko-Mazurskie|Wielkopolskie|Zachodniopomorskie&chm=f7544,110000,0,1,14|f9529,110000,0,0,14|f8454,110000,0,2,14|f6522,110000,0,3,14|f6610,110000,0,4,14|f8063,110000,0,5,14|f2687,110000,0,6,14|f9968,110000,0,7,14|f25182,110000,0,8,14|f3823,110000,0,9,14|f5865,110000,0,10,14|f15535,110000,0,11,14|f4819,110000,0,12,14|f5460,110000,0,13,14|f12440,110000,0,14,14|f7575,110000,0,15,14&chtt=Liczba+ulic+w+województwach
+```
+![](../images/radomski_ulice.png)
 
 
 ### [Plik JS z komendami](/scripts/mapReduce_aradomski.js)

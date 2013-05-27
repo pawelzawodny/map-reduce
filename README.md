@@ -29,7 +29,7 @@
 1. Marcin Głombiowski, [Całkowanie metodą prostokątów](/docs/mglombiowski.md).
 1. Daniel Landowski, [Duże i małe książki](/docs/dlandows.md).
 1. Jakub Ciechowski, [Trzęsienia ziemi](/docs/jciechowski.md).
-
+1. Adam Radomski, [Kody pocztowe](/docs/aradomski.md).
 
 ## GitHub Archive
 
