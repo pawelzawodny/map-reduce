@@ -28,6 +28,7 @@
 1. Paweł Śląski, [Aktywność userów Githuba](/docs/pslaski.md).
 1. Marcin Głombiowski, [Całkowanie metodą prostokątów](/docs/mglombiowski.md).
 1. Daniel Landowski, [Duże i małe książki](/docs/dlandows.md).
+1. Jakub Ciechowski, [Trzęsienia ziemi](/docs/jciechowski.md).
 
 
 ## GitHub Archive
