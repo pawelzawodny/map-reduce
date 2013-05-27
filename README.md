@@ -1,4 +1,4 @@
-# MapReduce w przykładach
+﻿# MapReduce w przykładach
 
 ![Przykład MapReduce](/images/mapreduce-example.png)
 
@@ -26,6 +26,8 @@
 1. Dorian Sawa, [Kody pocztowe](/docs/dsawa.md).
 1. Jan Pawlukiewicz, [Samochody w USA](/docs/joshuaBE.md).
 1. Paweł Śląski, [Aktywność userów Githuba](/docs/pslaski.md).
+1. Marcin Głombiowski, [Całkowanie metodą prostokątów](/docs/mglombiowski.md).
+1. Daniel Landowski, [Duże i małe książki](/docs/dlandows.md).
 1. Jakub Ciechowski, [Trzęsienia ziemi](/docs/jciechowski.md).
 
 
