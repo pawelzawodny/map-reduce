@@ -26,6 +26,7 @@
 1. Dorian Sawa, [Kody pocztowe](/docs/dsawa.md).
 1. Jan Pawlukiewicz, [Samochody w USA](/docs/joshuaBE.md).
 1. Paweł Śląski, [Aktywność userów Githuba](/docs/pslaski.md).
+1. Jakub Ciechowski, [Trzęsienia ziemi](/docs/jciechowski.md).
 
 
 ## GitHub Archive
