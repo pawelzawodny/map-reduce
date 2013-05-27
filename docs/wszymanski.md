@@ -39,7 +39,7 @@ var reduce = function(key, vals) {
 ## Map Reduce na kolekcji car_market
 
 ```js
-db.car_market.mapReduce(map, reduce, {out: "transmission"});
+db.car_market.mapReduce(map, reduce, { out: "transmission" });
 ```
 
 ## Wyniki agregacji
@@ -82,6 +82,8 @@ db.car_market.mapReduce(map, reduce, {out: "transmission"});
 
 ## Wykres wykonany przy użyciu Google Chart Tools
 
+![google_chart1](../images/ws_chart3.png)
+
 ```
 http://chart.googleapis.com/chart
   ?chxl=0:|lincoln|lexus|chrysler|cadillac|buick|mercedes-benz|jaguar
@@ -96,5 +98,3 @@ http://chart.googleapis.com/chart
   &chma=100
   &chtt=procent+skrzyni+automatycznych+w+autach
 ```
-
-![google_chart1](../images/ws_chart3.png)
