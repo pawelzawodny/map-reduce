@@ -65,6 +65,7 @@ Wynik:
 { "_id" : "be", "value" : 157300 }
 ```
 ![Chart1](https://raw.github.com/dszafranek/map-reduce/master/images/dszafranek1.png)
+
 b) 4 najrzadziej występujące słowa
 
 ```js
