@@ -81,3 +81,5 @@ A najmniej popularne okazały się Jeansy.
 ```json
 {"_id":"Jeans","value":2}
 ```
+
+![](https://github.com/urszulasawicka/map-reduce/blob/master/images/usawicka/popularnosc_produktow.png?raw=true)
