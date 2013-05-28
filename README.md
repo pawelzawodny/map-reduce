@@ -1,4 +1,4 @@
-﻿# MapReduce w przykładach
+# MapReduce w przykładach
 
 ![Przykład MapReduce](/images/mapreduce-example.png)
 
@@ -30,7 +30,7 @@
 1. Daniel Landowski, [Duże i małe książki](/docs/dlandows.md).
 1. Jakub Ciechowski, [Trzęsienia ziemi](/docs/jciechowski.md).
 1. Adam Radomski, [Kody pocztowe](/docs/aradomski.md).
-1. Damian Szafranek, [Częstotliwość występowania słów] (/docs/dszafranek.md).
+1. Marcin Gigołło, [Samochody](/docs/6i6ant.md).
 
 ## GitHub Archive
 
