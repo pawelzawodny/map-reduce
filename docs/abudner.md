@@ -2,9 +2,9 @@
 
 ### *Aneta Budner*
 
-Dla każdego województwa wyliczam liczbę klas adresów IP.
+1. Dla każdego województwa wyliczam liczbę klas adresów IP.
 
-## Funkcja map
+### Funkcja map
 
 ```js
 var map = function() {
@@ -12,7 +12,7 @@ var map = function() {
 };
 ```
 
-## Funkcja reduce
+### Funkcja reduce
 
 ```js
 var reduce = function(key, val) {
@@ -24,7 +24,7 @@ var reduce = function(key, val) {
 };
 ```
 
-## Map Reduce na kolekcji adresyip
+### Map Reduce na kolekcji adresyip
 
 ```js
 db.adresyip.mapReduce(
@@ -34,7 +34,7 @@ db.adresyip.mapReduce(
 );
 ```
 
-## Wyniki map-reduce
+### Wyniki map-reduce
 
 ```json
 { "_id" : "-", "value" : 14 }
@@ -57,7 +57,7 @@ db.adresyip.mapReduce(
 { "_id" : "ZACHODNIOPOMORSKIE", "value" : 27 } 
 ```
 
-## Wykres
+### Wykres
 
 ![Wykres](../images/abudner/mapreduce2-abudner.png)
 
@@ -93,7 +93,7 @@ Link posiada wszystkie informacje dotyczące mojego wykresu :
 
 Dla każdego województwa wyliczam liczbę zakresów IP oraz liczbę miast , które posiadają dany zakres IP.
 
-## Funkcja map
+### Funkcja map
 
 ```js
 var map = function() {
@@ -101,7 +101,7 @@ var map = function() {
 };
 ```
 
-## Funkcja reduce
+### Funkcja reduce
 
 ```js
 var reduce = function(key, value) {
@@ -113,7 +113,7 @@ var reduce = function(key, value) {
 };
 ```
 
-## Funkcja finalize zlicza liczbę zakresów IP oraz liczbę unikalnych miast dla każdego województwa
+### Funkcja finalize zlicza liczbę zakresów IP oraz liczbę unikalnych miast dla każdego województwa
 
 ```js
 var finalize = function(key, ret) {
@@ -132,7 +132,7 @@ var finalize = function(key, ret) {
 };
 ```
 
-## Map Reduce na kolekcji adresyip
+### Map Reduce na kolekcji adresyip
 
 ```js
 db.adresyip.mapReduce(
@@ -145,7 +145,7 @@ db.adresyip.mapReduce(
 );
 ```
 
-## Wyniki map-reduce
+### Wyniki map-reduce
 
 ```json
 { "_id" : "-", "value" : { "liczbaMiast" : 1, "liczbaIP" : 14 } }
@@ -168,7 +168,7 @@ db.adresyip.mapReduce(
 { "_id" : "ZACHODNIOPOMORSKIE", "value" : { "liczbaMiast" : 5, "liczbaIP" : 27 }}
 ```
 
-## Wykres
+### Wykres
 
 ![Wykres](../images/abudner/mapreduce-abudner.png)
 
