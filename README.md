@@ -31,6 +31,8 @@
 1. Jakub Ciechowski, [Trzęsienia ziemi](/docs/jciechowski.md).
 1. Adam Radomski, [Kody pocztowe](/docs/aradomski.md).
 1. Marcin Gigołło, [Samochody](/docs/6i6ant.md).
+1. Wojciech Szymański, [Samochody w USA](/docs/wszymanski.md).
+
 
 ## GitHub Archive
 
