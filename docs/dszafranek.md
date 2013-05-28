@@ -69,7 +69,7 @@ Wynik:
 
 ```js
 http://chart.googleapis.com/chart
-  ?chxl=0:|the|of|to|a|and|in|said|for|that|was|on|be|is|with|at|by|it|from|as|be
+  ?chxl=0:|be|as|from|it|by|at|with|is|be|on|was|that|for|said|in|and|a|to|of|the
   &chxr=a
   &chxt=y,x
   &chbh=a
@@ -101,7 +101,7 @@ Wynik:
 
 ```js
 http://chart.googleapis.com/chart
-  ?chxl=0:|assistant|sewers|toothbrush|hazmat
+  ?chxl=0:hazmat|toothbrush|sewers|assistant
   &chxr=a
   &chxt=y,x
   &chbh=a
