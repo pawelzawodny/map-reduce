@@ -66,6 +66,23 @@ Wynik:
 ```
 ![Chart1](https://raw.github.com/dszafranek/map-reduce/master/images/dszafranek1.png)
 
+
+```js
+http://chart.googleapis.com/chart
+  ?chxl=0:|be|as|from|it|by|at|with|is|be|on|was|that|for|said|in|and|a|to|of|the
+  &chxr=a
+  &chxt=y,x
+  &chbh=a
+  &chs=640x320
+  &cht=bhg
+  &chco=C0300,000000
+  &chds=a
+  &chd=t:2420778,1045733,968882,892429,865644,847825,504593,363865,347072,
+  	293027,291947,250919,246843,223846,210064,209586,195621,189451,181714,157300
+  &chma=100
+  &chtt=czestotliwosc+wystepowania+slow
+```
+
 b) 4 najrzadziej występujące słowa
 
 ```js
@@ -82,6 +99,20 @@ Wynik:
 ```
 ![Chart1](https://raw.github.com/dszafranek/map-reduce/master/images/dszafranek2.png)
 
+```js
+http://chart.googleapis.com/chart
+  ?chxl=0:hazmat|toothbrush|sewers|assistant
+  &chxr=a
+  &chxt=y,x
+  &chbh=a
+  &chs=640x320
+  &cht=bhg
+  &chco=C0300,000000
+  &chds=a
+  &chd=t:4095,100,10,1
+  &chma=100
+  &chtt=czestotliwosc+wystepowania+slow
+```
 
 Wnioski:
 
