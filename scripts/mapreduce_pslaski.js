@@ -23,3 +23,9 @@ db.github_sunday_evening.mapReduce(map, reduce, { out: 'codder_results'});  // s
 
 db.github_sunday_evening.mapReduce(map2, reduce, { out: 'lang_results'}); */
 
+// success! thanks to jq
+var map2 = function () {
+	emit({lang : this.language}, { count: 1 });
+};
+
+db.github_sunday_evening_repos.mapReduce(map2, reduce, { out: 'lang_results'});
