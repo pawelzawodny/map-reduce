@@ -56,7 +56,53 @@ Rezultat
 {"user"=>"sw11", "count"=>58.0}
 ```
 
-![](../images/pslaski_codders.png)
+![](../images/pslaski/pslaski_codders.png)
+
+## A jednak, nie taka ostatnia ta niedziela - czyli, który język był najpopularniejszy - round 2
+
+Tym razem, przy użyciu jq, wybrałem tylko te dane, które mnie interesują (dane o repozytorium + user i typ eventu) i ponownie zaimportowałem je do MongoDB.
+Przy okazji pozbyłem się rekordów bez danych o repozytorium oraz nulli dla niezdefiniowanych języków.
+
+```
+jq -c 'if .repository then .repository + {actor, type} else empty end | .language //= "unknown"' {plik}.json
+```
+
+### Funkcja Map:
+
+```javascript
+var map2 = function () {
+	emit({lang : this.language}, { count: 1 });
+};
+```
+
+### Wyniki
+
+Ponownie przy użyciu agregacji posortowałem, oczyściłem i wybrałem 10 najbardziej popularnych języków.
+
+```ruby
+langs = lang_results.aggregate([{'$sort' => {'value.count' => -1}},
+                                 {'$project' => {:_id => 0, :lang => '$_id.lang', :count => '$value.count'}},
+                                 {'$match' => {:lang => {'$ne' => 'unknown'}}},
+                                 {'$limit' => 10}])
+```
+
+Rezultat
+
+```
+{"lang"=>"JavaScript", "count"=>6555.0}
+{"lang"=>"Java", "count"=>3646.0}
+{"lang"=>"Ruby", "count"=>3286.0}
+{"lang"=>"Python", "count"=>2569.0}
+{"lang"=>"C++", "count"=>2508.0}
+{"lang"=>"PHP", "count"=>1840.0}
+{"lang"=>"C", "count"=>1287.0}
+{"lang"=>"Objective-C", "count"=>933.0}
+{"lang"=>"Shell", "count"=>656.0}
+{"lang"=>"C#", "count"=>655.0}
+```
+
+![](../images/pslaski/pslaski_langs.png)
+
 
 ### Plik JS
 [Klik](/scripts/mapreduce_pslaski.js)
