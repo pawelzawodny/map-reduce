@@ -61,7 +61,7 @@ Rezultat
 ## A jednak, nie taka ostatnia ta niedziela - czyli, który język był najpopularniejszy - round 2
 
 Tym razem, przy użyciu jq, wybrałem tylko te dane, które mnie interesują (dane o repozytorium + user i typ eventu) i ponownie zaimportowałem je do MongoDB.
-Przy okazji pozbyłem się nulli dla niezdefiniowanych języków.
+Przy okazji pozbyłem się rekordów bez danych o repozytorium oraz nulli dla niezdefiniowanych języków.
 
 ```
 jq -c 'if .repository then .repository + {actor, type} else empty end | .language //= "unknown"' {plik}.json
