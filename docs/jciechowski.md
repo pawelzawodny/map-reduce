@@ -1,4 +1,5 @@
 ﻿# Map reduce
+### *Jakub Ciechowski*
 
 Obliczamy sumę trzęsień ziemi dla danego regionu
 
@@ -83,7 +84,7 @@ db.earthquakes_sum.find({});
 ```
 
 ## Wykres
-![Mapa](/images/jciechowski.png)
+![](../images/jciechowski.png)
 
 ## Skrypt
 * [Skrypt](/scripts/mapreduce_jciechowski.js)
