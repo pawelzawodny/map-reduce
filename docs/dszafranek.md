@@ -1,6 +1,6 @@
-#Map Reduce na dużej ilości dokumentów tekstowych
+## Map Reduce na dużej ilości dokumentów tekstowych
 
-## Damian Szafranek
+### *Damian Szafranek*
 
 Map Reduce na plikach tesktowych w języku angielskim w celu przeanalizowania częstotliwości występowania poszczególnych słów.
 Ilość dokumentów: 84678
