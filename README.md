@@ -35,6 +35,8 @@
 1. Damian Szafranek, [Częstotliwość występowania słów] (/docs/dszafranek.md).
 1. Patryk Jażdżewski, [Wydatki Home Office] (/docs/pjazdzewski.md).
 1. Romuald Łuczyk, [Państwa świata] (/docs/rluczyk.md).
+1. Adrian Szulc, [Lotniska] (/docs/aszulc.md).
+
 
 ## GitHub Archive
 
