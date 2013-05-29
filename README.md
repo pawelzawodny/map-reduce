@@ -36,6 +36,7 @@
 1. Patryk Jażdżewski, [Wydatki Home Office] (/docs/pjazdzewski.md).
 1. Romuald Łuczyk, [Państwa świata] (/docs/rluczyk.md).
 1. Adrian Szulc, [Lotniska] (/docs/aszulc.md).
+1. Michał Frankowski [Natura2000](/docs/mfrankowski.md)
 
 
 ## GitHub Archive
@@ -96,3 +97,6 @@ Przykładowy JSON:
   "created_at": "2013-03-31T06:14:39-07:00"
 }
 ```
+# Data Wranglers
+
+![Data Wrangler](https://raw.github.com/nosql/data-refine/master/images/data-wrangler.jpg?login=wbzyl&token=5c44029438833b54e5b7bc564ed0479c)
