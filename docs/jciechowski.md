@@ -1,5 +1,5 @@
 ﻿# Map reduce
-﻿### *Jakub Ciechowski*
+### *Jakub Ciechowski*
 
 Obliczamy sumę trzęsień ziemi dla danego regionu
 
