@@ -32,7 +32,7 @@
 1. Adam Radomski, [Kody pocztowe](/docs/aradomski.md).
 1. Marcin Gigołło, [Samochody](/docs/6i6ant.md).
 1. Wojciech Szymański, [Samochody w USA](/docs/wszymanski.md).
-1. Damian Szafranek, [Częstotliwość występowania słów] (/docs/dszafranek.md).
+1. Damian Szafranek, [Lista UNESCO i czołgi WW2] (/docs/dszafranek.md).
 1. Patryk Jażdżewski, [Wydatki Home Office] (/docs/pjazdzewski.md).
 1. Romuald Łuczyk, [Państwa świata] (/docs/rluczyk.md).
 1. Adrian Szulc, [Lotniska] (/docs/aszulc.md).

@@ -1,75 +1,72 @@
-## Map Reduce na dużej ilości dokumentów tekstowych
+## Map Reduce na danych: [UNESCO] (https://raw.github.com/nosql/data-refine/master/data/json/unesco_eastern_europe.json), [WW2 Tanks] (https://raw.github.com/nosql/data-refine/master/data/json/ww2tanks.json)
 
 ### *Damian Szafranek*
 
-Map Reduce na plikach tesktowych w języku angielskim w celu przeanalizowania częstotliwości występowania poszczególnych słów.
-Ilość dokumentów: 84678
-Wszystkich słów: 39749179
-
+1.Map Reduce dotyczący listy UNESCO w Europie Wschodniej, mający na celu wyłonienie państw z największą ich ilością.
 
 Funkcja Map:
 
 ```js
-	var map = function() {
-		this.tekst.match(/[a-z]+/g).forEach(function(word){
-				emit(word, 1);
-			});
-		};
+var map = function() {
+    emit(this.country, 1);
+};
 ```
 
 Funkcja Reduce:
 
 ```js
-	var reduce = function(key, val) {
-		var count = 0;
-		for(i = 0; i < val.length; i++) {
-			count += val[i];
-		}
-		return count;
-	};
+var reduce = function(key, val) {
+    var count = 0;
+    for(i=0; i<val.length; i++) {
+		count += val[i];
+    }
+    return count;
+};
 ```
 
-Wynik MapReduce zapisany do kolekcji wynik, następnie pobranie danych z tej kolekcji
+Wynik MapReduce zapisany do kolekcji wynik:
 
 ```js
-var result1 = db.textfiles.mapReduce(map, reduce, {out: 'wynik'});
+var result1 = db.unesco.mapReduce(map, reduce, {out: 'wynik'});
 ```
-
-a) 20 najczęściej występujących słów
 
 ```js
-db.wynik.find().sort({'value': -1}).limit(20)
+{
+"result" : "result1",
+"timeMillis" : 66,
+"counts" : {
+    "input" : 125,
+    "emit" : 125,
+    "reduce" : 18,
+    "output" : 9
+    },
+"ok" : 1,
+}
 ```
+
 Wynik:
 
 ```js
-{ "_id" : "the", "value" : 2420778 }
-{ "_id" : "of", "value" : 1045733 }
-{ "_id" : "to", "value" : 968882 }
-{ "_id" : "a", "value" : 892429 }
-{ "_id" : "and", "value" : 865644 }
-{ "_id" : "in", "value" : 847825 }
-{ "_id" : "said", "value" : 504593 }
-{ "_id" : "for", "value" : 363865 }
-{ "_id" : "that", "value" : 347072 }
-{ "_id" : "was", "value" : 293027 }
-{ "_id" : "on", "value" : 291947 }
-{ "_id" : "be", "value" : 250919 }
-{ "_id" : "is", "value" : 246843 }
-{ "_id" : "with", "value" : 223846 }
-{ "_id" : "at", "value" : 210064 }
-{ "_id" : "by", "value" : 209586 }
-{ "_id" : "it", "value" : 195621 }
-{ "_id" : "from", "value" : 189451 }
-{ "_id" : "as", "value" : 181714 }
-{ "_id" : "be", "value" : 157300 }
+db.wynik.find().sort({'value': -1})
 ```
-![Chart1](https://raw.github.com/dszafranek/map-reduce/master/images/dszafranek1.png)
+ 
+```js
+{"_id" : "Russia","value" : 32},
+{"_id" : "Bulgaria","value" : 18},
+{"_id" : "Poland","value" : 17},
+{"_id" : "Czech","value" : 16},
+{"_id" : "Romania","value" : 12},
+{"_id" : "Hungary","value" : 11},
+{"_id" : "Ukraine","value" : 8},
+{"_id" : "Slovakia", "value" : 7},
+{"_id" : "Belarus", "value" : 4}
+```
 
+![Chart1](https://raw.github.com/dszafranek/map-reduce/master/images/dszafranek1.png)
 
 ```js
 http://chart.googleapis.com/chart
-  ?chxl=0:|be|as|from|it|by|at|with|is|be|on|was|that|for|said|in|and|a|to|of|the
+  ?chxl=0:|Belarus|Slovakia|Ukraine|Hungary|Romania|Czech|Poland|Bulgaria|Russia|
   &chxr=a
   &chxt=y,x
   &chbh=a
@@ -77,31 +74,64 @@ http://chart.googleapis.com/chart
   &cht=bhg
   &chco=C0300,000000
   &chds=a
-  &chd=t:2420778,1045733,968882,892429,865644,847825,504593,363865,347072,
-  	293027,291947,250919,246843,223846,210064,209586,195621,189451,181714,157300
+  &chd=t:32,18,17,16,12,11,8,7,4
   &chma=100
-  &chtt=czestotliwosc+wystepowania+slow
+  &chtt=Lista+UNESCO+w+Europie+Wschodniej
 ```
 
-b) 4 najrzadziej występujące słowa
+2.Map Reduce dotyczący typów czołgów używanych w czasie trwania II Wojny Światowej, mający na celu wyłonienie państw z największą ich ilością.
+
+Funkcja Map:
 
 ```js
-db.wynik.find().sort({'value': 1}).limit(4)
+var map = function() {
+    emit(this.Country, 1);
+};
+```
+
+Funkcja Reduce:
+
+```js
+var reduce = function(key, val) {
+    var count = 0;
+    for(i=0; i<val.length; i++) {
+		count += val[i];
+    }
+    return count;
+};
+```
+
+Wynik MapReduce zapisany do kolekcji wynik:
+
+```js
+var result1 = db.tanks.mapReduce(map, reduce, {out: 'wynik'});
 ```
 
 Wynik:
 
 ```js
-{ "_id" : "assistant", "value" : 4095 }
-{ "_id" : "sewers", "value" : 100 }
-{ "_id" : "toothbrush", "value" : 10 }
-{ "_id" : "hazmat", "value" : 1 }
+db.wynik.find().sort({'value': -1})
 ```
+ 
+```js
+{"_id" : "United Kingdom","value" : 35},
+{"_id" : "Soviet Union","value" : 27},
+{"_id" : "Japan","value" : 17},
+{"_id" : "Nazi Germany","value" : 16},
+{"_id" : "United States","value" : 13},
+{"_id" : "France","value" : 11},
+{"_id" : "Italy","value" : 5},
+{"_id" : "Poland", "value" : 4},
+{"_id" : "Australia", "value" : 3},
+{"_id" : "Czechoslovakia", "value" : 3},
+{"_id" : "Canada", "value" : 1}
+```
+
 ![Chart1](https://raw.github.com/dszafranek/map-reduce/master/images/dszafranek2.png)
 
 ```js
 http://chart.googleapis.com/chart
-  ?chxl=0:hazmat|toothbrush|sewers|assistant
+  ?chxl=0:|Canada|Czechoslovakia|Australia|Poland|Italy|France|United States|Nazi Germany|Japan|Soviet Union|United Kingdom|
   &chxr=a
   &chxt=y,x
   &chbh=a
@@ -109,11 +139,7 @@ http://chart.googleapis.com/chart
   &cht=bhg
   &chco=C0300,000000
   &chds=a
-  &chd=t:4095,100,10,1
+  &chd=t:35,27,17,16,13,11,5,4,3,3,1
   &chma=100
-  &chtt=czestotliwosc+wystepowania+slow
+  &chtt=Typy+czołgów+wykorzystanych+w+trakcie+II+Wojny+Światowej
 ```
-
-Wnioski:
-
-Jak widać, rozbieżność występowania słów jest olbrzymia. Do tego w ścisłej czołowce są same tak zwane 'słowa-stopu' czyli słowa, które same z siebie nie mają żadnego znaczenia.
