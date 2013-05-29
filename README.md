@@ -34,7 +34,7 @@
 1. Wojciech Szymański, [Samochody w USA](/docs/wszymanski.md).
 1. Damian Szafranek, [Częstotliwość występowania słów] (/docs/dszafranek.md).
 1. Patryk Jażdżewski, [Wydatki Home Office] (/docs/pjazdzewski.md).
-
+1. Romuald Łuczyk, [Państwa świata] (/docs/rluczyk.md).
 
 ## GitHub Archive
 
