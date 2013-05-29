@@ -1,18 +1,11 @@
-﻿#Map Reduce  - Całkowanie metodą prostokątów
+# Całkowanie metodą prostokątów
 
-### by Marcin Głombiowski
-
-
------
------
-
+### *Marcin Głombiowski*
 
 
 Jest to skrypt, który zapełnia bazę rekordami o kolejnych wartościach, a potem przeprowadza ich redukcję do jednej wartości jaką jest pole powierzchni.
 
-------
-
-####Definicja podstawowych wartości:
+### Definicja podstawowych wartości:
 
 ```js
 var split = 200;
