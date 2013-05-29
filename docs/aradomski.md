@@ -140,3 +140,93 @@ http://chart.googleapis.com/chart?chs=560x520&cht=map:auto=0,0,0,10&chco=B3BCC0|
 
 
 ### [Plik JS z komendami](/scripts/mapReduce_aradomski.js)
+
+
+
+#Średnia ilość ulic w powiecie
+
+### Funkcja map:
+
+```javascript
+var map = function() {
+	emit(this.wojewodztwo,{ulice: [this.ulice], powiaty: [this.powiat]});
+};
+```
+
+
+### Funkcja Reduce:
+
+```javascript
+var reduce = function(key, val) {
+	var res = {ulice:[], powiaty:[]};
+	val.forEach(function (value) {
+		res.ulice = value.ulice.concat(res.ulice);
+		res.powiaty = value.powiaty.concat(res.powiaty);
+	});
+	return res;
+};
+```
+### Funkcja finalize 
+```javascript
+var finalize = function(key, res) {
+	var countUlice = res.ulice.length, countPowiaty = 0, uniq = {};
+	res.powiaty.forEach(function (value) {
+		if(!uniq[value]) {
+			uniq[value] = value;
+			countPowiaty++;
+		}
+	});
+	res.srednia = Number(countUlice / countPowiaty).toFixed(2);
+    delete res.powiaty;
+    delete res.ulice;
+    return res;
+};
+```
+
+### Uruchamianie 
+
+```
+db.kody_pocztowe.mapReduce(map,reduce,{ out : { inline : true },finalize:finalize })
+```
+
+###	Fragment wyniku
+
+```
+		{
+			"_id" : "zachodniopomorskie",
+			"value" : {
+				"srednia" : "315.63"
+			}
+		},
+		{
+			"_id" : "łódzkie",
+			"value" : {
+				"srednia" : "369.19"
+			}
+		},
+		{
+			"_id" : "śląskie",
+			"value" : {
+				"srednia" : "282.45"
+			}
+		},
+		{
+			"_id" : "świętokrzyskie",
+			"value" : {
+				"srednia" : "321.27"
+			}
+		}
+
+```
+
+### Wykres
+Link:
+```
+http://chart.googleapis.com/chart?chs=560x520&cht=map:auto=0,0,0,10&chco=B3BCC0|3366C1|DC3912|6F990B|109678|990A99|4399C6|DD4477|66AA00|B82E2E|316395|9AA499|AFAA11|6633B1|E673FF|8B0707|678067&chld=PL-DS|PL-KP|PL-PM|PL-LU|PL-PD|PL-MA|PL-LB|PL-LD|PL-MZ|PL-OP|PL-PK|PL-SL|PL-SK|PL-WN|PL-WP|PL-ZP&chdl=Dolnośląskie|Kujawsko-Pomorskie|Pomorskie|Lubelskie|Podlaskie|Małopolskie|Lubuskie|Łódzkie|Mazowieckie|Opolskie|Podkarpackie|Śląskie|Świętokrzyskie|Warmińsko-Mazurskie|Wielkopolskie|Zachodniopomorskie&chm=f279.41,110000,0,1,14|f297.78,110000,0,0,14|f352.25,110000,0,2,14|f232.93,110000,0,3,14|f330.50,110000,0,4,14|f322.52,110000,0,5,14|f167.94,110000,0,6,14|f369.19,110000,0,7,14|f535.79,110000,0,8,14|f294.08,110000,0,9,14|f202.24,110000,0,10,14|f282.45,110000,0,11,14|f321.27,110000,0,12,14|f237.39,110000,0,13,14|f318.97,110000,0,14,14|f315.63,110000,0,15,14&chtt=Liczba+ulic+w+województwach
+```
+![](../images/radomski_srednia.png)
+
+
+### [Plik JS z komendami](/scripts/mapReduce_aradomski.js)
+
+
