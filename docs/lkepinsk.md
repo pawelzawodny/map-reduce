@@ -164,7 +164,7 @@ Wyniki:
 { "_id" : "Rest of Europe", "value" : { "tosMany" : 124, "averagePrice" : "2484960.40" } }
 { "_id" : "Spanish la Liga", "value" : { "tosMany" : 55, "averagePrice" : "2953793.10" } }
 ```
-Diagramy:
+
 ![](../images/lkepinsk/lkepinsk-map-reduce-diag1.png)
 ![](../images/lkepinsk/lkepinsk-map-reduce-diag2.png)
 
