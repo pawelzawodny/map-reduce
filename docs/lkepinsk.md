@@ -16,7 +16,7 @@ http://www.soccernews.com/soccer-transfers/
 
 ### Screen z aplikacji, którą stworzyłem:
 
-![](../images/lkepinsk/transfers-data-download-screen.png)
+![](../images/lkepinsk/lkepinsk-transfers-data-download-screen.png)
 
 ###Metoda 'wyciągająca' dane:
 
