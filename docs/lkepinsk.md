@@ -56,7 +56,7 @@ public List<String> GetTransfersData(string htmlDocument)
 
 ## Przykładowe rekordy:
 ```json
-       {
+    {
       "Type" : "Italian Serie A",
       "Years" : "2012-2013",
       "Player" : "Thomas HeurtauxDefender",
