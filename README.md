@@ -37,6 +37,7 @@
 1. Romuald Łuczyk, [Państwa świata] (/docs/rluczyk.md).
 1. Adrian Szulc, [Lotniska] (/docs/aszulc.md).
 1. Michał Frankowski [Natura2000](/docs/mfrankowski.md).
+1. Łukasz Kępiński [Transfery piłkarzy 2007-2013](/docs/lkepinsk.md).
 
 
 ## GitHub Archive
