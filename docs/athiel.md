@@ -2,9 +2,7 @@
 
 ### *Andrzej Thiel*
 
-## 1. 
-
-Za pomocą poniższych funkcji generowane są wyniki przedstawiające kody pocztowe zaczynające się od 90-64
+## 1. Za pomocą poniższych funkcji generowane są wyniki przedstawiające kody pocztowe zaczynające się od 90-64
 
 
 ### Funkcja Map:
@@ -26,7 +24,7 @@ r = function(key, values) {
 ### Wynik :
 
 
-![MapReduce 1](../images/dsawa/athiel1.png)
+![MapReduce 1](../images/athiel1.png)
 ```json
                 {
                         "_id" : [
@@ -87,9 +85,7 @@ r = function(key, values) {
 
 ```
 
-## 2. 
-
-Za pomocą poniższych funkcji generowany jest wynik przedstawiający liczbe 
+## 2. Za pomocą poniższych funkcji generowany jest wynik przedstawiający liczbe 
 miast o populacji pomiędzy 5000 i 30000 oraz o nazwie stanu zaczynającego sie na literę W
 
 
@@ -117,7 +113,7 @@ r= function(key, values) {
 
 ### Wynik:
 
-![MapReduce 2](../images/dsawa/athiel2.png)
+![MapReduce 2](../images/athiel2.png)
 
 
 ```json
