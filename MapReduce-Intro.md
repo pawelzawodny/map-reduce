@@ -1,8 +1,8 @@
-![A classroom in Saint Cloud, Minnesota, USA. 1919. National Geographic](/images/classroom-1919_mini.png)
+
+![A classroom in Saint Cloud, Minnesota, USA. 1919. National Geographic](/images/classroom-1919_mini.jpg)
 
 Źródło:
 [An Open Letter to Science Students and Science Teachers](http://phenomena.nationalgeographic.com/2013/05/31/an-open-letter-to-science-students-and-science-teachers/)
-(A classroom in Saint Cloud, Minnesota, USA. 1919. National Geographic)
 
 
 ## Wprowadzenie do MapReduce
