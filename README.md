@@ -39,7 +39,7 @@
 1. Michał Frankowski [Natura2000](/docs/mfrankowski.md).
 1. Łukasz Kępiński [Transfery piłkarzy 2007-2013](/docs/lkepinsk.md).
 1. Andrzej Thiel [Kody pocztowe](/docs/athiel.md). 
-
+1. Mateusz Skorb [Monety okolicznościowe](/docs/mskorb.md). 
 
 ## GitHub Archive
 
