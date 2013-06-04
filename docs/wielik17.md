@@ -1,12 +1,12 @@
-### *Damian Wieliczko, 186437*
+# *Damian Wieliczko, 186437*
 ---
-#Wykorzystana baza db.kody_pocztowe
+## Wykorzystana baza db.kody_pocztowe
 
-# Map reduce
+## Map reduce
 
-## Ilość kodów pocztowych w poszczególnych województwach.
+### Ilość kodów pocztowych w poszczególnych województwach.
 
-# Funkcja map
+### Funkcja map
 
 ```js
 var map = function() {
@@ -15,7 +15,7 @@ var map = function() {
 
 ```
 
-## Funkcja reduce
+### Funkcja reduce
 
 ```js
 reduce = function(key, values) {
@@ -23,13 +23,13 @@ reduce = function(key, values) {
 };
 ```
 
-## Wywołanie mapReduce
+### Wywołanie mapReduce
 
 ```js
 db.kody_pocztowe.mapReduce(map,reduce,{ out :{ inline : true }})
 ```
 
-## Wyniki agregacji
+### Wyniki agregacji
 
 ```json
 {
@@ -116,7 +116,7 @@ Wykres:
 
 ## Miejscowości zaczynające się na "Duż".
 
-# Funkcja map
+### Funkcja map
 
 ```js
 map = function() {
@@ -124,7 +124,7 @@ map = function() {
 };
 ```
 
-## Funkcja reduce
+### Funkcja reduce
 
 ```js
 reduce = function(key, values) {
@@ -132,13 +132,13 @@ reduce = function(key, values) {
 };
 ```
 
-## Wywołanie mapReduce
+### Wywołanie mapReduce
 
 ```js
 db.kody_pocztowe.mapReduce(map,reduce,{ out :{ inline : true }})
 ```
 
-## Wyniki agregacji
+### Wyniki agregacji
 
 ```json
 {
