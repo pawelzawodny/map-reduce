@@ -1,7 +1,7 @@
 ## Maciej Młynarski - map reduce
 
 ###Obliczenia
-```json
+```js
 var map = function() {
     emit(this.ISO, 1);
 };
@@ -64,7 +64,7 @@ db.UFC_Fighters.mapReduce(
 ```
 
 ###Po przefiltrowaniu
-```json
+```js
 db.result.find( { value : { $gt: 1 } } )
 ```
 
