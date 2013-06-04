@@ -1,5 +1,7 @@
 ## Maciej Młynarski - map reduce
 
+###Liczenie zawodników z każdego kraju
+
 ###Obliczenia
 ```js
 var map = function() {
@@ -63,7 +65,7 @@ db.UFC_Fighters.mapReduce(
 { "_id" : "VNM", "value" : 1 }
 ```
 
-###Po przefiltrowaniu
+###Po przefiltrowaniu (jest za dużo krajów z jednym zawodnikiem)
 ```js
 db.result.find( { value : { $gt: 1 } } )
 ```
