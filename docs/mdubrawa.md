@@ -172,7 +172,7 @@ db.Cars.mapReduce(map,
 ### Wykres dla części wybranych marek
 Na wykresi widać jakiej marki samochód mamy wybrać jeżeli chcemy mieć jak najwięcej mocy w stosunku do ceny samochodu
 
-![Srednia cane 1hp](https://raw.github.com/nosql/map-reduce/master/images/mdubrawa/avg1hp.png)
+![Srednia cane 1hp](https://raw.github.com/Socr4tes/map-reduce/master/images/mdubrawa/avg1hp.png)
 
 
 ## Linki
