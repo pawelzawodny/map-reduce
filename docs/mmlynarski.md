@@ -1,7 +1,7 @@
 ## Maciej Młynarski - map reduce
 
 ###Obliczenia
-```
+```json
 var map = function() {
     emit(this.ISO, 1);
 };
@@ -22,7 +22,7 @@ db.UFC_Fighters.mapReduce(
 ```
 
 ###Wyniki
-```
+```json
 { "_id" : "AFG", "value" : 1 }
 { "_id" : "ARM", "value" : 2 }
 { "_id" : "AUS", "value" : 6 }
@@ -62,3 +62,11 @@ db.UFC_Fighters.mapReduce(
 { "_id" : "VEN", "value" : 1 }
 { "_id" : "VNM", "value" : 1 }
 ```
+
+###Po przefiltrowaniu
+```json
+db.result.find( { value : { $gt: 1 } } )
+```
+
+###Wykres
+![](../images/UFC_chart.png)
