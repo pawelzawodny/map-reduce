@@ -40,6 +40,7 @@
 1. Łukasz Kępiński [Transfery piłkarzy 2007-2013](/docs/lkepinsk.md).
 1. Andrzej Thiel [Kody pocztowe](/docs/athiel.md). 
 1. Damian Wieliczko [Kody_pocztowe](/docs/wielik17.md).
+1. Maciej Stanik [Samochody w USA](/docs/180.md).
 
 ## GitHub Archive
 
