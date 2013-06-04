@@ -38,7 +38,7 @@
 1. Adrian Szulc, [Lotniska] (/docs/aszulc.md).
 1. Michał Frankowski [Natura2000](/docs/mfrankowski.md).
 1. Łukasz Kępiński [Transfery piłkarzy 2007-2013](/docs/lkepinsk.md).
-1. Andrzej Thiel [kody pocztowe](/docs/athiel.md). 
+1. Andrzej Thiel [Kody pocztowe](/docs/athiel.md). 
 
 
 ## GitHub Archive
