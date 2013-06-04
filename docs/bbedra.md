@@ -1,4 +1,4 @@
-# Map Reduce na licie lotnisk
+# Map Reduce na liście lotnisk
 
 ### *Bartłomiej Bedra*
 
