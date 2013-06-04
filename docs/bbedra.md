@@ -1,8 +1,8 @@
-# Map Reduce na liúcie lotnisk
+# Map Reduce na licie lotnisk
 
-### *Bart≥omiej Bedra*
+### *Bart≈Çomiej Bedra*
 
-## Przyk≥adowe dane:
+## Przyk≈Çadowe dane:
 
 ```json
 {
@@ -42,7 +42,7 @@ var r = function(key, vals) {
 };
 ```
 
-### Przyk≥adowe wywo≥anie
+### Przyk≈Çadowe wywo≈Çanie
 
 ```javascript
 db.lotniska.mapReduce(m, r, {out: 'lotniska_results'});
