@@ -112,7 +112,7 @@ db.kody_pocztowe.mapReduce(map,reduce,{ out :{ inline : true }})
 
 ```
 Wykres:
-![wykres](https://chart.googleapis.com/chart?chs=318x220&cht=p&chco=FF9900|000000&chds=0,25182&chd=t:9529,7544,6522,2687,25182,8063,3823,5865,6610,8454,5460,12440,7575,9968,15535,4819&chl=dolno%C5%9Bl%C4%85skie|kujawsko-pomorskie|lubelskie|lubuskie|mazowieckie|ma%C5%82opolskie|opolskie|podkarpackie|podlaskie|pomorskie|warmi%C5%84sko-mazurskie|wielkopolskie|zachodniopomorskie|%C5%82%C3%B3dzkie|%C5%9Bl%C4%85skie|%C5%9Bwi%C4%99tokrzyskie&chma=|5)
+![wykres](https://chart.googleapis.com/chart?chs=540x258&cht=p&chco=FF9900|000000&chds=-5,25187&chd=t:9529,7544,6522,2687,25182,8063,3823,5865,6610,8454,5460,12440,7575,9968,15535,4819&chl=dolno%C5%9Bl%C4%85skie|kujawsko-pomorskie|lubelskie|lubuskie|mazowieckie|ma%C5%82opolskie|opolskie|podkarpackie|podlaskie|pomorskie|warmi%C5%84sko-mazurskie|wielkopolskie|zachodniopomorskie|%C5%82%C3%B3dzkie|%C5%9Bl%C4%85skie|%C5%9Bwi%C4%99tokrzyskie)
 
 ## Miejscowości zaczynające się na "Duż".
 
@@ -292,4 +292,4 @@ db.kody_pocztowe.mapReduce(map,reduce,{ out :{ inline : true }})
 ```
 
 
-//Link do skryptu: [mapreduce_wielik17.js](../scripts/mapreduce_wielik17.js)
+Link do skryptu: [mapreduce_wielik17.js](../scripts/mapreduce_wielik17.js)
