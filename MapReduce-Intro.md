@@ -1,4 +1,11 @@
-# Wprowadzenie do MapReduce
+![](/images/classroom-1919.png)
+
+Źródło:
+[An Open Letter to Science Students and Science Teachers](http://phenomena.nationalgeographic.com/2013/05/31/an-open-letter-to-science-students-and-science-teachers/),
+(A classroom in Saint Cloud, Minnesota, USA. 1919. National Geographic)
+
+
+## Wprowadzenie do MapReduce
 
 1. Co to jest platforma obliczeniowa MapReduce?
    [link](http://wbzyl.inf.ug.edu.pl/nosql/mongodb-mapreduce)
