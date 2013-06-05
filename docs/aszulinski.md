@@ -44,7 +44,7 @@ var r = function(religion, people) {
 ### Wynik
 
 
-![MapReduce wykres]()
+![MapReduce wykres](https://github.com/szadams/map-reduce/raw/master/images/wykres_aszulinski.JPG)
 
 
 Próbka danych wynikowych
