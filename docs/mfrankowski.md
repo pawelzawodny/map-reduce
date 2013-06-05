@@ -58,4 +58,5 @@ mongoexport --db nosql --collection results --out collection.json
 
 ##Pliki
 [Skrypt](../scripts/mapreduce_mfrankowski.js)
+
 [Json wyniku](../data/json/mfrankowski.json)
