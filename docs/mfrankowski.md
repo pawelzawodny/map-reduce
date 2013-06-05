@@ -53,6 +53,7 @@ mongoexport --db nosql --collection results --out collection.json
 
 ##Wykresy
 ![Wykres 1](../images/mfrankowski1.png)
+
 ![Wykres 2](../images/mfrankowski2.png)
 
 ##Pliki
