@@ -36,7 +36,7 @@
 1. Patryk Jażdżewski, [Wydatki Home Office](/docs/pjazdzewski.md).
 1. Romuald Łuczyk, [Państwa świata](/docs/rluczyk.md).
 1. Adrian Szulc, [Lotniska](/docs/aszulc.md).
-1. Michał Frankowski [Natura2000](/docs/mfrankowski.md).
+1. Michał Frankowski [Samochody](/docs/mfrankowski.md).
 1. Łukasz Kępiński [Transfery piłkarzy 2007-2013](/docs/lkepinsk.md).
 1. Andrzej Thiel [Kody pocztowe](/docs/athiel.md).
 1. Damian Wieliczko [Kody_pocztowe](/docs/wielik17.md).
