@@ -38,10 +38,11 @@
 1. Adrian Szulc, [Lotniska] (/docs/aszulc.md).
 1. Michał Frankowski [Natura2000](/docs/mfrankowski.md).
 1. Łukasz Kępiński [Transfery piłkarzy 2007-2013](/docs/lkepinsk.md).
-1. Andrzej Thiel [Kody pocztowe](/docs/athiel.md). 
+1. Andrzej Thiel [Kody pocztowe](/docs/athiel.md).
 1. Damian Wieliczko [Kody_pocztowe](/docs/wielik17.md).
 1. Maciej Stanik [Samochody w USA](/docs/180.md).
 1. Przemysław Jakuła [GeoNames - kraje, miejscowości świata](/docs/pjakula.md).
+1. Mateusz Skorb [Monety okolicznościowe](/docs/mskorb.md).
 
 ## GitHub Archive
 
@@ -101,6 +102,3 @@ Przykładowy JSON:
   "created_at": "2013-03-31T06:14:39-07:00"
 }
 ```
-# Data Wranglers
-
-![Data Wrangler](https://raw.github.com/nosql/data-refine/master/images/data-wrangler.jpg?login=wbzyl&token=5c44029438833b54e5b7bc564ed0479c)
