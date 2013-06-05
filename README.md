@@ -41,6 +41,7 @@
 1. Andrzej Thiel [Kody pocztowe](/docs/athiel.md). 
 1. Damian Wieliczko [Kody_pocztowe](/docs/wielik17.md).
 1. Maciej Stanik [Samochody w USA](/docs/180.md).
+1. Przemysław Jakuła [GeoNames - kraje, miejscowości świata](/docs/pjakula.md).
 
 ## GitHub Archive
 
