@@ -47,6 +47,7 @@
 1. Marek Dubrawa [Rynek samachodowy w USA 2000r](/docs/mdubrawa.md).
 1. Bartłomiej Bedra [Lotniska](/docs/bbedra.md).
 1. Adam Szuliński [Religie](/docs/aszulinski.md).
+2. Anna Łońska, [Lotniska](https://github.com/Iskratgz/mapReduce/blob/master/docs/alonska.md).
 
 ## GitHub Archive
 
