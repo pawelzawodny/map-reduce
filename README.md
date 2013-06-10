@@ -36,18 +36,19 @@
 1. Patryk Jażdżewski, [Wydatki Home Office](/docs/pjazdzewski.md).
 1. Romuald Łuczyk, [Państwa świata](/docs/rluczyk.md).
 1. Adrian Szulc, [Lotniska](/docs/aszulc.md).
-1. Michał Frankowski [Samochody](/docs/mfrankowski.md).
-1. Łukasz Kępiński [Transfery piłkarzy 2007-2013](/docs/lkepinsk.md).
-1. Andrzej Thiel [Kody pocztowe](/docs/athiel.md).
-1. Damian Wieliczko [Kody_pocztowe](/docs/wielik17.md).
-1. Maciej Stanik [Samochody w USA](/docs/180.md).
-1. Przemysław Jakuła [GeoNames - kraje, miejscowości świata](/docs/pjakula.md).
-1. Mateusz Skorb [Monety okolicznościowe](/docs/mskorb.md).
-1. Maciej Młynarski [UFC Fighters](/docs/mmlynarski.md).
-1. Marek Dubrawa [Rynek samachodowy w USA 2000r](/docs/mdubrawa.md).
-1. Bartłomiej Bedra [Lotniska](/docs/bbedra.md).
-1. Adam Szuliński [Religie](/docs/aszulinski.md).
-2. Anna Łońska, [Lotniska](https://github.com/Iskratgz/mapReduce/blob/master/docs/alonska.md).
+1. Michał Frankowski, [Samochody](/docs/mfrankowski.md).
+1. Łukasz Kępiński, [Transfery piłkarzy 2007-2013](/docs/lkepinsk.md).
+1. Andrzej Thiel, [Kody pocztowe](/docs/athiel.md).
+1. Damian Wieliczko, [Kody_pocztowe](/docs/wielik17.md).
+1. Maciej Stanik, [Samochody w USA](/docs/180.md).
+1. Przemysław Jakuła, [GeoNames - kraje, miejscowości świata](/docs/pjakula.md).
+1. Mateusz Skorb, [Monety okolicznościowe](/docs/mskorb.md).
+1. Maciej Młynarski, [UFC Fighters](/docs/mmlynarski.md).
+1. Marek Dubrawa, [Rynek samachodowy w USA 2000r](/docs/mdubrawa.md).
+1. Bartłomiej Bedra, [Lotniska](/docs/bbedra.md).
+1. Adam Szuliński, [Religie](/docs/aszulinski.md).
+1. Anna Łońska, [Lotniska](/docs/alonska.md).
+
 
 ## GitHub Archive
 
