@@ -74,3 +74,7 @@ http://chart.googleapis.com/chart
   &chma=100
   &chtt=procent+skrzyni+automatycznych+w+autach
 ```
+
+## Pliki:
+
+[json po map_reduce] (/data/json/ws_reduced.json)
