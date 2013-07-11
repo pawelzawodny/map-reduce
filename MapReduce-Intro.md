@@ -4,10 +4,10 @@
    [link](http://wbzyl.inf.ug.edu.pl/nosql/mongodb-mapreduce)
 2. W jakim języku programujemy funkcje *map* i funkcje *reduce*?
    [link](https://github.com/languages)
-3. Marijn Haverbeke,
-   [Eloquent JavaScript](http://www.bt4.pl/kursy/javascript/wszystko-jasne/)
-4. Proste MapReduce najczęściej wyliczają statystyki (średnie, sumy)
+3. Proste MapReduce najczęściej wyliczają statystyki (średnie, sumy)
    zebranych danych. Klasyczny przykład – zliczanie częstości występowania słów.
+4. Antoine Girbal,
+   [How to speed up MongoDB Map Reduce by 20x](http://edgystuff.tumblr.com/post/54709368492/how-to-speed-up-mongodb-map-reduce-by-20x)
 5. Jak przedstawić wyniki obliczeń MapReduce:
   - [Data-Driven Documents](http://d3js.org/)
   - Włodzimierz Gajda,
