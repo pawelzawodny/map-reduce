@@ -48,6 +48,7 @@
 1. Bartłomiej Bedra, [Lotniska](/docs/bbedra.md).
 1. Adam Szuliński, [Religie](/docs/aszulinski.md).
 1. Anna Łońska, [Lotniska](/docs/alonska.md).
+1. Pawel Zawodny, [Tour de France] (/docs/pzawodny.md).
 
 
 ## GitHub Archive
